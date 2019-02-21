@@ -138,7 +138,7 @@ Das passende Passwort file dazu liegt in einem privaten git: ``https://gitea.see
 
 Das Playbook kann wie folgt ausgeführt werden, sobald das git mit der ansible-vault file unter ../toolbox-ansible-vault/ geklont wurde.
 ```bash
-ansible-playbook setup.yml --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd
+ansible-playbook switche.yml --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd
 ``` 
 
 
