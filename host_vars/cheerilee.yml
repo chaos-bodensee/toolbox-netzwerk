@@ -1,0 +1,33 @@
+---
+hostname: cheerilee.tbbs.me
+
+management: true
+management_access: 172.23.31.254 
+management_interface: Vlan1
+
+interface:
+  default:
+    name: "Default Interface"
+    vlan: 0
+  GigabitEthernet0/1:
+    name: "Toolbox Uplink"
+    vlan: 0
+  GigabitEthernet0/7:
+    name: "Freifunk Input"
+    vlan: 7
+  GigabitEthernet0/17:
+    name: "AP ruum42"
+    vlan: 't'
+  GigabitEthernet0/27:
+    name: "Freifunk output"
+    vlan: 7
+  GigabitEthernet0/42:
+    name: "Uplink AP"
+    vlan: 't'
+  GigabitEthernet0/44:
+    name: "Uplink Keller"
+    vlan: 't'
+  GigabitEthernet0/46:
+    name: "Uplink Keller"
+    vlan: 't'
+ 

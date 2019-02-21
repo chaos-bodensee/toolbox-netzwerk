@@ -1,0 +1,24 @@
+---
+hostname: princess-luna.tbbs.me
+
+management: true
+management_access: 172.23.31.253
+management_interface: Vlan1
+
+interface:
+  default:
+    name: "Default Interface"
+    vlan: 0
+  GigabitEthernet0/7:
+    name: "Freifunk Access"
+    vlan: 7
+  GigabitEthernet0/24:
+    name: "Trunk Port AP Keller "
+    vlan: 't'
+  GigabitEthernet0/25:
+    name: "Trunk Port to nightmare-moon.tbbs.me "
+    vlan: 't'
+  GigabitEthernet0/27:
+    name: "Uplink Trunk Port"
+    vlan: 't'
+
