@@ -12,4 +12,14 @@
   vars:
     - ansible_ssh_user: 'root'
 
+- name: create a fancy feature complete home
+  hosts: router
+  tags:
+  - setup
+  - base
+  roles:
+   - base-packages
+   - dotfiles
+   - install-bat
+
 

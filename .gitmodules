@@ -13,3 +13,12 @@
 [submodule "roles/sshd"]
 	path = roles/sshd
 	url = https://github.com/DO1JLR/role_sshd.git
+[submodule "roles/dotfiles"]
+	path = roles/dotfiles
+	url = https://github.com/DO1JLR/role_dotfiles.git
+[submodule "roles/base-packages"]
+	path = roles/base-packages
+	url = https://gitea.see-base.de/toolbox/role-base_packages.git
+[submodule "roles/install-bat"]
+	path = roles/install-bat
+	url = https://github.com/gantsign/ansible_role_bat.git
