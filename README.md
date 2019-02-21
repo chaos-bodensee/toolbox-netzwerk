@@ -124,3 +124,10 @@ Man kann bei Ansible auch nur einzelen Tags ausführen. Zum Beispiel so:
 ansible-playbook starswirl.yml --tags "strichliste"
 ```
 
+ Ansible-Vault
+---------------
+
+Verschlüsselte variabeln erstellen:
+```bash
+# ansible-vault encrypt_string 'encrypted_secret_string_value' -n string_name >> vars.yml
+```
