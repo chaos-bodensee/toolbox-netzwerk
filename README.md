@@ -4,19 +4,10 @@
 # Git
 
 ```bash
-git clone https://gitea.see-base.de/toolbox/netzwerk.git
-cd netzwerk/
+git clone https://github.com/ToolboxBodensee/toolbox-netzwerk.git
+cd toolbox-netzwerk/
 git submodule update --init --recursive
 ```
-
-Zum clonen der Submodule benötigst du einen SSH Schlüssel, der in deinem Profil eingetragen ist!
-Einen bestimmten SSH Key kannst du so angeben:
-```bash
-GIT_SSH_COMMAND="ssh -i ~/.ssh/privater_ssh_key" git submodule update --init --recursive
-```
-**ACHTUNG:**
-Einige Submodule sensible Daten wie die PPPOE Einwahldaten zur Telekom, Klartextpasswörter zu Cisco Geräten oder interne MAC Adressen von Geräten.
-Daher sind nicht einige essentielle Submodules nicht öffentlich einsehbar. Für einen Zugang muss man sich auf [gitea.see-base.de](https://gitea.see-base.de/) registrieren und in die toolbox Gruppe dort aufgenommen werden. Dies können u.a. [L3D](mailto:ansible-access-to-gitea-toolbox@l3d.yt) und [Mart](mailto:martin.hellebrand@toolbox-bodensee.de) dir geben. Melde dich dafür bei denen im Slack, per [IRC](https://webirc.hackint.org/#irc://irc.hackint.org/#ffbsee) oder per E-Mail. *(GPG Keys sind vorhanden).*
 
 ## Verkabelung:
 
