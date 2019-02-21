@@ -107,6 +107,9 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)
 ```
 
  Tipps:
+==============
+
+ Tags
 --------
 
 Man kann bei Ansible auch nur einzelen Tags ausführen. Zum Beispiel so:
@@ -114,6 +117,16 @@ Man kann bei Ansible auch nur einzelen Tags ausführen. Zum Beispiel so:
 ```bash
 ansible-playbook starswirl.yml --tags "strichliste"
 ```
+
+ Switche
+-----------
+Die Switche werden per SSH gewartet. So muss deren Fingerprint auch in die ``~/.ssh/known_hosts`` gelangen.
+Eine initiale SSH Verbindung kann man zB. mit folgenden extra parametern aufbauen:
+
+```
+ssh -c aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -oKexAlgorithms=+diffie-hellman-group1-sha1 toolbox@SWITCH_IP
+```
+
 
  Ansible-Vault
 ---------------
