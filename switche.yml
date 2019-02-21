@@ -16,5 +16,5 @@
   hosts: switche
   tags: save
   roles:
-    - cisco-wr
+    - cisco-backup
 

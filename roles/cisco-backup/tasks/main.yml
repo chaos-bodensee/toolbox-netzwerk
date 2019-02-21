@@ -1,0 +1,9 @@
+---
+- name: Backup current switch config (ios)
+  ios_config:
+    backup: yes
+
+- name: Save current switch config (ios)
+  ios_config:
+    save_when: modified
+
