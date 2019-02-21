@@ -1,0 +1,6 @@
+[submodule "roles/cisco"]
+	path = roles/cisco
+	url = https://gitea.see-base.de/toolbox/role-cisco.git
+[submodule "roles/cisco-interfaces"]
+	path = roles/cisco-interfaces
+	url = https://gitea.see-base.de/toolbox/role-cisco-interfaces.git
