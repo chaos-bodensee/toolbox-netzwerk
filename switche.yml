@@ -1,0 +1,20 @@
+---
+
+- name: Apply common configuration of all Switches
+  hosts: switche
+  tags: cisco
+  roles:
+    - cisco
+
+- name: Apply Interface configuration of all Switches
+  hosts: switche
+  tags: int
+  roles:
+    - cisco-interfaces
+
+- name: Save configuration on all Switches
+  hosts: switche
+  tags: save
+  roles:
+    - cisco-wr
+
