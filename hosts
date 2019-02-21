@@ -1,0 +1,8 @@
+[router]
+starswirl.tbbs.me ansible_host=vh.tbbs.me
+
+[switche]
+cheerilee.tbbs.me ansible_host=172.23.31.254 
+princess-luna.tbbs.me ansible_host=172.23.31.253
+nightmare-moon.tbbs.me ansible_host=172.23.31.252
+
