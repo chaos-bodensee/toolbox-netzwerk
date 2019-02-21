@@ -1,0 +1,15 @@
+---
+
+- name: secure access to toolbox gateway
+  hosts: router
+  tags:
+  - access
+  - ssh
+  - auth
+  roles:
+   - ssh-auth
+   - sshd
+  vars:
+    - ansible_ssh_user: 'root'
+
+

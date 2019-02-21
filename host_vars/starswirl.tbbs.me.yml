@@ -1,0 +1,15 @@
+---
+
+# Authorisation via ssh:
+users:
+  l3d:
+   - l3d
+  mart:
+   - mart
+
+# admins on local device:
+admins:
+  - mart
+  - l3d
+
+
