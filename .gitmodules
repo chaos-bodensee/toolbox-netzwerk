@@ -28,3 +28,6 @@
 [submodule "ansible/lookup_plugins"]
 	path = ansible/lookup_plugins
 	url = https://gitea.see-base.de/toolbox/plugin-hostfiles.git
+[submodule "roles/sysctl"]
+	path = roles/sysctl
+	url = https://gitea.see-base.de/toolbox/role-sysctl.git
