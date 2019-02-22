@@ -31,3 +31,6 @@
 [submodule "roles/sysctl"]
 	path = roles/sysctl
 	url = https://gitea.see-base.de/toolbox/role-sysctl.git
+[submodule "roles/resolver"]
+	path = roles/resolver
+	url = https://gitea.see-base.de/toolbox/role-resolver.git
