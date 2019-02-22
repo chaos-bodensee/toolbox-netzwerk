@@ -22,4 +22,12 @@
    - dotfiles
    - install-bat
 
+- name: configure the basic network
+  hosts: router
+  tags:
+  - setup
+  - network
+  - ip
+  roles:
+   - networking
 
