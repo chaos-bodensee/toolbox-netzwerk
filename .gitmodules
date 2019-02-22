@@ -25,3 +25,6 @@
 [submodule "roles/networking"]
 	path = roles/networking
 	url = https://gitea.see-base.de/toolbox/role-networking.git
+[submodule "ansible/lookup_plugins"]
+	path = ansible/lookup_plugins
+	url = https://gitea.see-base.de/toolbox/plugin-hostfiles.git
