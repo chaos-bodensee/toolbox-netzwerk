@@ -43,5 +43,15 @@
    - resolver
    - sysctl
 
+- name: configure basic routing and firewall (e.g. NAT)
+  hosts: router
+  tags:
+  - setup
+  - network
+  - routing
+  roles:
+   - ferm
+
+
 
 

@@ -34,3 +34,6 @@
 [submodule "roles/resolver"]
 	path = roles/resolver
 	url = https://gitea.see-base.de/toolbox/role-resolver.git
+[submodule "roles/ferm"]
+	path = roles/ferm
+	url = https://gitea.see-base.de/toolbox/role-ferm.git
