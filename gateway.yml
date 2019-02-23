@@ -52,6 +52,14 @@
   roles:
    - ferm
 
+- name: configure router services: dns
+  hosts: router
+  tags:
+  - network
+  - dns
+  roles:
+   - tb-unbound
+
 
 
 

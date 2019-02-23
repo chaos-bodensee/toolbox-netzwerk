@@ -37,3 +37,6 @@
 [submodule "roles/ferm"]
 	path = roles/ferm
 	url = https://gitea.see-base.de/toolbox/role-ferm.git
+[submodule "roles/tb-unbound"]
+	path = roles/tb-unbound
+	url = https://gitea.see-base.de/toolbox/tb-role-unbound.git
