@@ -28,8 +28,6 @@ resolver_nameservers:
   - 2a02:2970:1002::18
 
 # ansible managed warning
-ansible_managed: "This file is managed by ansible
- To change any variable here, please remeber they will be overwritten!
- More information: https://github.com/ToolboxBodensee/toolbox-netzwerk.git "
+ansible_managed: "This file is managed by ansible - to change any variable here, please remeber they will be overwritten! -> More information: https://github.com/ToolboxBodensee/toolbox-netzwerk.git "
 
 
