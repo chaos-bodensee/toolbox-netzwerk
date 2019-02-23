@@ -52,7 +52,7 @@
   roles:
    - ferm
 
-- name: configure router services: dns
+- name: configure router services -> dns
   hosts: router
   tags:
   - network
