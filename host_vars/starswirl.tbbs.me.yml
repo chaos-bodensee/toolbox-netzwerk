@@ -12,4 +12,24 @@ admins:
   - mart
   - l3d
 
+# basic system variable
+hostname: "starswirl.tbbs.me"
+
+
+# configure resolveer role
+resolver_searchdomains:
+  - tbbs.me
+
+resolver_nameservers:
+  - 85.214.20.141
+  - 194.150.168.168
+  - 2001:1608:10:25::1c04:b12f
+  - 2001:41d0:2:73d4::125
+  - 2a02:2970:1002::18
+
+# ansible managed warning
+ansible_managed: "This file is managed by ansible
+ To change any variable here, please remeber they will be overwritten!
+ More information: https://github.com/ToolboxBodensee/toolbox-netzwerk.git "
+
 

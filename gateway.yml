@@ -30,4 +30,8 @@
   - ip
   roles:
    - networking
+   - resolver
+   - sysctl
+
+
 
