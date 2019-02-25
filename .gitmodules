@@ -40,3 +40,6 @@
 [submodule "roles/tb-unbound"]
 	path = roles/tb-unbound
 	url = https://gitea.see-base.de/toolbox/tb-role-unbound.git
+[submodule "roles/pppoe"]
+	path = roles/pppoe
+	url = https://gitea.see-base.de/toolbox/role-pppoe.git
