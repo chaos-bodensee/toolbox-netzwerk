@@ -1,7 +1,7 @@
  Das Netzwerk der Toolbox Bodensee e.V.
 ==============================
 
-# Git
+# Git hinweis
 
 ```bash
 git clone https://github.com/ToolboxBodensee/toolbox-netzwerk.git
@@ -25,9 +25,9 @@ git submodule update --init --recursive
           |        |
           '--[S¹]--' <-Netzwerkraum
              |||
-      [S⁴]---'|'-------[S] <- 3D Druck       
- Bespr.raum   |'-------[S] <- Cyberlabor
-              |'-------[S] <- Lounge
+      [S⁴]---'|'-------[S] <- 3D Druck [OG]      
+ Bespr.raum   |'-------[S] <- Cyberlabor [OG]
+              |'-------[S] <- Lounge [EG] [nicht aufgebaut]
               |
   [S³]-------[S²] <<-- Keller
  Rack1     Rack2
@@ -41,7 +41,7 @@ git submodule update --init --recursive
 
 ## Geräte Hostnamen:
 
-Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)
+Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 *Ist DNSSEC validiert und wird von L3D betreut*
 
 ```
@@ -64,7 +64,9 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)
 
 
 ```
-## VLANs:
+
+ VLANs:
+--------------
 
 **Status:** ''begonnen''
 
@@ -73,38 +75,39 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)
 [2] Toolbox Clients
 [3] Toolbox Servers
 [4] Toolbox IOT [Kein Uplink]
-[5] Guests
+[5] Guests [WAN Only]
 [6] IPv6 ONLY
 [7] Freifunk
-[8] Manual VMs (KVM,vbox,qemu,...)
-[9] Openstack VMs
 
 [1] 100.100.0.0/20 [geplant]
-[1] fdff::/64 [geplant]
 
 [2] 172.23.16.0/20 
-[2] fdb0::/64 [geplant]
 
 [3] 100.64.0.0/20 [geplant]
-[3] fd50::/64 [geplant]
 
 [4] 10.42.0.0/20 [geplant]
-[4] fdee::/64 [geplant]
 
 [5] 192.168.240.0/20 [geplant]
-[5] fdef::/64 [geplant]
 
 [6] fd00::/64 [geplant]
 
 [7] 10.11.160.0/20 <- Remote from FFBSee
 [7] fdef:1702:b5ee:42::/64 <- Remote from FFBSee
 
-[8] 172.28.240.0/22 [geplant]
-
-[9] 172.29.240.0/22 [geplant]
-
-
 ```
+
+ Mithelfen
+------------
+
+**Mitarbeit** ist hier gerne gesehen. Für Zugänge zum Ansible Vault den [L3D](https://chaos.social/@l3d) oder Mart ansprechen.
+
+**Zugang zu Geräten** gibt es *(mit ausnahme der Switche)* per SSH Key. *(ausschließlich ed25519 Keys)*<br/>
+Hierfür deine SSH public Keys in ``/files/admin_ssh_keys/deinName.pub`` legen. *(Das ist in [diesem](https://gitea.see-base.de/toolbox/ssh-public-keys.git) Repo. Registrierung ist für jeden offen)*.<br/>
+Außerdem musst du dein Name in de ``users`` variable des jeweiligen hosts packen. Für root Zugang dann auch in die ``admins`` variable.
+
+**Wieso mitmachen?**<br/>
+Die Toolbox ist ein Maker- und Hackerspace voller kreativer Menschen mit expertise in vielen Bereichen. Lass uns doch gegenseitig Wissen austauschen, anstatt dieses anderen vorzuenthalten.<br/>
+**Wissen ist eine der Ressourcen, die mehr wird, wenn man sie mit anderen teilt!**
 
  Tipps:
 ==============
