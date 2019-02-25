@@ -156,7 +156,9 @@ Verschlüsselte variabeln erstellen:
 
 Verschlüsselte variable mit passwort-file erstellen:
 ```
-# ansible-vault encrypt_string 'encrypted_secret_string_value' -n string_name --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd >> vars.yml
+# ansible-vault encrypt_string 'encrypted_secret_string_value' \
+  -n string_name \
+--vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd >> vars.yml
 ```
 
 
