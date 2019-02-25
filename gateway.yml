@@ -52,11 +52,22 @@
   roles:
    - ferm
 
+- name: configure router services -> pppoe
+  hosts: router
+  tags:
+  - network
+  - pppoe
+  - dsl
+  - telekom
+  roles:
+   - pppoe
+
 - name: configure router services -> dns
   hosts: router
   tags:
   - network
   - dns
+  - unbound
   roles:
    - tb-unbound
 
