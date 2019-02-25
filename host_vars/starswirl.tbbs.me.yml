@@ -83,6 +83,7 @@ static_pppoe_ipv4: "217.91.187.203"
 default_pppoe_pty: "/usr/sbin/pppoe -I enp3s0.7 -T 80 -m 1452"
 use_pppoe_ns: false
 install_pppoe_route: true
+install_pppoe_replacedefaultroute: true
 
 # Which interface is used by pppoe
 pppoe_interface: "enp3s0.7"
