@@ -77,5 +77,14 @@ _pppoe_passwort: !vault |
           3662373361326532660a356132313832396630643534353039633930393533343762346562333031
           3033
 
+static_pppoe_ipv4: "217.91.187.203"
 
+# some dsl-provider config vars:
+default_pppoe_pty: "/usr/sbin/pppoe -I enp3s0.7 -T 80 -m 1452"
+use_pppoe_ns: false
+install_pppoe_route: true
+
+# Which interface is used by pppoe
+pppoe_interface: "enp3s0.7"
+use_pppoe_plugin: true
 
