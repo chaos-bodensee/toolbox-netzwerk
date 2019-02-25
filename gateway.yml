@@ -60,6 +60,17 @@
   roles:
    - tb-unbound
 
+- name: configure router services -> dhcpd
+  hosts: router
+  tags:
+  - network
+  - dhcp
+  - dhcpd
+  - isc-dhcp-server
+  - dhcp-server
+  roles:
+   - dhcpd
+
 
 
 
