@@ -1,6 +1,7 @@
 ---
 
 - name: restart dhcpcd
+  become: yes
   service:
     name: isc-dhcp-server
     state: restarted

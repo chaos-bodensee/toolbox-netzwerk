@@ -17,10 +17,6 @@
     group: 'root'
     mode: '0755'
 
-- name: Debug
-  debug:  
-    var: leases
-
 - name: Copy ISC DHCP config for this specific gateway
   become: yes
   template:
