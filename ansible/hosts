@@ -1,5 +1,5 @@
 [router]
-starswirl.tbbs.me ansible_host=vh.tbbs.me
+starswirl.tbbs.me ansible_host=172.23.16.2
 
 [switche]
 cheerilee.tbbs.me ansible_host=172.23.31.254 

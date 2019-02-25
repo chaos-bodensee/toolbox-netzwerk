@@ -30,4 +30,14 @@ resolver_nameservers:
 # ansible managed warning
 ansible_managed: "This file is managed by ansible - to change any variable here, please remeber they will be overwritten! -> More information: https://github.com/ToolboxBodensee/toolbox-netzwerk.git "
 
+# some network details for unbound:
+unbound_accepted_ip: 
+  - "2003:a:13b:9000::/56"
+  - "2003:1:17f:bb90::/64"
+  - "172.23.16.0/16"
+  - "217.91.187.203/32"
+
+unbound_interfaces:
+  - "172.23.16.1"
+  - "2003:a:13b:9000::1"
 
