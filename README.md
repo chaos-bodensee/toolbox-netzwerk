@@ -103,11 +103,13 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 
 **Zugang zu Geräten** gibt es *(mit ausnahme der Switche)* per SSH Key. *(ausschließlich ed25519 Keys)*<br/>
 Hierfür deine SSH public Keys in ``/files/admin_ssh_keys/deinName.pub`` legen. *(Das ist in [diesem](https://gitea.see-base.de/toolbox/ssh-public-keys.git) Repo. Registrierung ist für jeden offen)*.<br/>
-Außerdem musst du dein Name in de ``users`` variable des jeweiligen hosts packen. Für root Zugang dann auch in die ``admins`` variable.
+Außerdem musst du dein Name in die ``users`` variable des jeweiligen hosts packen. Für root Zugang dann auch in die ``admins`` variable.
 
 **Wieso mitmachen?**<br/>
 Die Toolbox ist ein Maker- und Hackerspace voller kreativer Menschen mit expertise in vielen Bereichen. Lass uns doch gegenseitig Wissen austauschen, anstatt dieses anderen vorzuenthalten.<br/>
-**Wissen ist eine der Ressourcen, die mehr wird, wenn man sie mit anderen teilt!**
+**Wissen ist eine der Ressourcen, die mehr wird, wenn man sie mit anderen teilt!**<br/>
+Die [Authoren](https://github.com/ToolboxBodensee/toolbox-netzwerk/graphs/contributors) dieses Playbook sind bestimmt gerne bereit dir das ganze ausführlich zu erklären, wenn du Sie freundlich darum bittest.
+
 
  Tipps:
 ==============
