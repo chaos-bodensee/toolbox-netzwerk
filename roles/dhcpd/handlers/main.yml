@@ -1,0 +1,10 @@
+---
+
+- name: restart dhcpcd
+  service:
+    name: isc-dhcp-server
+    state: restarted
+
+- name: dpkg reconfigure isc-dhcp-server
+  command: 'dpkg-reconfigure -f noninteractive isc-dhcp-server'
+

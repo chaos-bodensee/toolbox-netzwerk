@@ -1,0 +1,123 @@
+---
+
+# MAC Addressen klein schreiben!!!
+
+leases:
+  - host:
+    - name: 'replicator'
+    - mac: 'b8:27:eb:3b:28:d5'
+    - address: '172.23.31.10'
+  - host:
+    - name: 'i2'
+    - mac: 'b8:27:eb:29:60:c9'
+    - address: '172.23.31.11'
+  - host:
+    - name: 'samsung-printer'
+    - mac: '84:25:19:04:dd:f8'
+    - address: '172.23.31.12'
+  - host:
+    - name: 'freifunk-offloader'
+    - mac: '00:19:99:74:9e:1f'
+    - address: '172.23.31.13'
+  - host:
+    - name:  'scootaloo'
+    - mac: '00:30:48:66:f6:82'
+    - address: '172.23.31.14'
+  - host:
+    - name:  'mrmeeseeks01'
+    - mac: '1c:6f:65:d0:75:66'
+    - address: '172.23.31.15'
+  - host:
+    - name: 'mulltec'
+    - mac: 'b8:27:eb:78:40:a4'
+    - address: '172.23.31.16' 
+  - host:
+    - name: 'ctc'
+    - mac: 'b8:27:eb:2e:fa:cc'
+    - address: '172.23.31.17'
+  - host:
+    - name: 'enclosure'
+    - mac: 'b8:27:eb:29:60:c9'
+    - address: '172.23.31.18'
+  - host:
+    - name: 'info-display'
+    - mac: 'b8:27:eb:08:0b:9e'
+    - address: '172.23.31.19'
+  - host:
+    - name: 'c6-01'
+    - mac: '00:30:48:66:f6:83'
+    - address: '172.23.31.20'
+  - host:
+    - name: 'feinstaub'
+    - mac: '2c:3a:e8:0e:9c:fA'
+    - address: '172.23.31.21'
+  - host:
+    - name: 'muelltec'
+    - mac: 'b8:27:eb:2d:15:f1'
+    - address: '172.23.31.22'
+  - host:
+    - name: 'mcp'
+    - mac: '02:41:08:81:54:35'
+    - address: '172.23.31.23'
+  - host:
+    - name: 'waffel'
+    - mac: 'b8:27:eb:98:99:74'
+    - address: '172.23.31.24'
+  - host:
+    - name: 'drone'
+    - mac: '00:12:17:16:e8:5d'
+    - address: '172.23.31.25' 
+  - host:
+    - name: 'cluster'
+    - mac: '98:4b:e1:6e:4d:7c'
+    - address: '172.23.31.26' 
+  - host:
+    - name: 'r42-led'
+    - mac: '84:f3:eb:58:3f:ec'
+    - address: '172.23.31.27' 
+  - host:
+    - name: 'k8200'
+    - mac: 'b8:27:eb:8b:85:c6'
+    - address: '172.23.31.28' 
+  - host:
+    - name: 'streming'
+    - mac: '88:88:88:88:87:88'
+    - address: '172.23.31.29' 
+  - host:
+    - name: 'streaming2'
+    - mac: '9c:5c:8e:88:70:bf'
+    - address: '172.23.31.30' 
+  - host:
+    - name: 'rtp'
+    - mac: '00:1e:06:31:00:3a'
+    - address: '172.23.31.31'
+  - host:
+    - name: 'ap-og-sued'
+    - mac: 'f0:9f:c2:f3:00:24'
+    - address: '172.23.31.241'
+  - host:
+    - name: 'ap-erdgeschossflurhinten'
+    - mac: 'f0:9f:c2:7c:bd:a6'
+    - address: '172.23.31.242'
+  - host:
+    - name: 'ap-bibliothek'
+    - mac: 'f0:9f:c2:7c:af:a4'
+    - address: '172.23.31.243'
+  - host:
+    - name: 'ap-keller'
+    - mac: 'fc:ec:da:3a:58:d7'
+    - address: '172.23.31.244'
+  - host:
+    - name: 'nightmare-moon'
+    - mac: '00:19:2f:e5:87:c0'
+    - address: '172.23.31.252'
+  - host:
+    - name: 'princess-luna'
+    - mac: '00:19:e8:f7:e4:c0'
+    - address: '172.23.31.253'
+  - host:
+    - name: 'cheerilee'
+    - mac: '00:1c:0e:b7:8e:c0'
+    - address: '172.23.31.254'
+
+

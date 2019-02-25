@@ -41,3 +41,20 @@ unbound_interfaces:
   - "172.23.16.1"
   - "2003:a:13b:9000::1"
 
+# some variables for isc-dhcp-server
+
+ipv4_dhcp_interface: enp1s0
+
+dhcp:
+  - pool: '172.23.16.0'
+  - mask: '255.255.240.0'
+  - range: '172.23.16.100 172.23.30.255'
+  - router: '172.23.16.1'
+  - dnsv4: '172.23.16.1'
+  - dnsv6: '2003:a:13b:9000::1'
+  - domain: 'tbbs.me'
+  - broadcast: '172.23.31.255'
+  - lease: '14400'
+  - max_lease: '1823442'
+  - unify: '172.23.16.1'
+
