@@ -1,8 +1,7 @@
 auto enp1s0
 
 iface enp1s0 inet static
-#        address 172.23.16.1
-        address 172.23.16.2
+        address 172.23.16.1
         netmask 255.255.240.0
         broadcast 172.23.31.255
 
