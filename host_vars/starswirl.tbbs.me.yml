@@ -95,4 +95,9 @@ wide_dhcpv6_interface: "ppp0"
 wide_prefix_interfaces:
   - "enp1s0"
 
+# Radvd parameters:
+radvd_interface: 'enp1s0'
+radvd_prefix: '2003:a:13b:9000::/64'
+radvd_dns: '2003:a:13b:9000::1'
+
 

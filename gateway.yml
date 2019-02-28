@@ -68,6 +68,7 @@
   - network
   - pppoe
   - ipv6
+  - dhcpv6
   - telekom
   roles:
    - wide_dhcpv6
@@ -92,6 +93,13 @@
   roles:
    - dhcpd
 
-
+- name: configure router services -> radvd
+  hosts: router
+  tags:
+  - network
+  - ipv6
+  - radvd
+  roles:
+   - radvd
 
 
