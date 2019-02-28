@@ -60,9 +60,6 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 [S⁴] Besprechungsraum Switch (ruum42)
  + zecora.tbbs.me.
 
-
-
-
 ```
 
  VLANs:
@@ -132,6 +129,13 @@ Eine initiale SSH Verbindung kann man zB. mit folgenden extra parametern aufbaue
 ssh -c aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -oKexAlgorithms=+diffie-hellman-group1-sha1 toolbox@SWITCH_IP
 ```
 
+ Telekom + IPv6
+-------------
+Um die IPv6 Route der Telekom zu unserem Router zu setzen, muss mit dhcpv6 das passende Prefix angefragt werden.
+Damit wird dann die passende Route zu seinem Prefix gesetzt.
+
+**Achtung:**, die Toolbox hat feste IP und IPv4 Adressen. Daher können die hier teilweise fest einkonfiguriert werden.
+Für dynamische IP Adressen sieht das anders möglicherweise anders aus. Feste IP Adressen kosten aber idr. nur ein paar Euro mehr.
 
  Ansible-Vault
 ---------------
@@ -158,7 +162,7 @@ Verschlüsselte variable mit passwort-file erstellen:
 ```
 # ansible-vault encrypt_string 'encrypted_secret_string_value' \
   -n string_name \
---vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd >> vars.yml
+  --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd >> vars.yml
 ```
 
 
