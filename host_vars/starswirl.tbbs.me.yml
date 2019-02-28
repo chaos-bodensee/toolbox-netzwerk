@@ -90,3 +90,6 @@ pppoe_enable_ipv6: true
 pppoe_interface: "enp3s0.7"
 use_pppoe_plugin: true
 
+# variables for wide_dhcpv6_client
+wide_dhcpv6_interface: ppp0
+

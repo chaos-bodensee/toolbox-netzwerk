@@ -43,3 +43,6 @@
 [submodule "roles/pppoe"]
 	path = roles/pppoe
 	url = https://gitea.see-base.de/toolbox/role-pppoe.git
+[submodule "roles/wide_dhcpv6"]
+	path = roles/wide_dhcpv6
+	url = https://gitea.see-base.de/toolbox/role-wide_dhcpv6_client.git

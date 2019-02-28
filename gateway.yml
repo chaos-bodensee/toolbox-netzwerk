@@ -62,6 +62,16 @@
   roles:
    - pppoe
 
+- name: configure router services -> [WAN] dhcpv6-client
+  hosts: router
+  tags:
+  - network
+  - pppoe
+  - ipv6
+  - telekom
+  roles:
+   - wide_dhcpv6
+
 - name: configure router services -> dns
   hosts: router
   tags:
