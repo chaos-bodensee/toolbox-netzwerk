@@ -94,6 +94,7 @@ use_pppoe_plugin: true
 wide_dhcpv6_interface: "ppp0"
 wide_prefix_interfaces:
   - "enp1s0"
+ugly_telekom_wide_dhcpv6_fix: true
 
 # Radvd parameters:
 radvd_interface: 'enp1s0'
