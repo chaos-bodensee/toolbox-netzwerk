@@ -98,7 +98,7 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 
 **Mitarbeit** ist hier gerne gesehen. Für Zugänge zum Ansible Vault den [L3D](https://chaos.social/@l3d) oder Mart ansprechen.
 
-**Zugang zu Geräten** gibt es *(mit ausnahme der Switche)* per SSH Key. *(ausschließlich ed25519 Keys)*<br/>
+**Zugang zu Geräten** gibt es *(mit ausnahme der Switche)* per SSH Key. *(bevorzugt ed25519 Keys)*<br/>
 Hierfür deine SSH public Keys in ``/files/admin_ssh_keys/deinName.pub`` legen. *(Das ist in [diesem](https://gitea.see-base.de/toolbox/ssh-public-keys.git) Repo. Registrierung ist für jeden offen)*.<br/>
 Außerdem musst du dein Name in die ``users`` variable des jeweiligen hosts packen. Für root Zugang dann auch in die ``admins`` variable.
 
