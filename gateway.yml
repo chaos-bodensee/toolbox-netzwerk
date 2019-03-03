@@ -6,6 +6,7 @@
   - access
   - ssh
   - auth
+  - newuser
   roles:
    - ssh-auth
    - sshd
@@ -28,6 +29,7 @@
   - setup
   - base
   - home
+  - newuser
   roles:
    - dotfiles
    - install-bat
