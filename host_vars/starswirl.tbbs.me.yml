@@ -6,6 +6,8 @@ users:
    - l3d
   mart:
    - mart
+  matt:
+   - matt
 
 # admins on local device:
 admins:
