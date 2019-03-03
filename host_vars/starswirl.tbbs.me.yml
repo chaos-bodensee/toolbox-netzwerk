@@ -1,6 +1,6 @@
 ---
 
-# Authorisation via ssh:
+# Which user get which ssh key:
 users:
   l3d:
    - l3d
@@ -8,6 +8,10 @@ users:
    - mart
   matt:
    - matt
+
+# non admin users on local device
+user:
+  - matt
 
 # admins on local device:
 admins:
