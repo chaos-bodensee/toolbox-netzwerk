@@ -51,6 +51,7 @@
   - setup
   - network
   - routing
+  - ferm
   roles:
    - ferm
 
