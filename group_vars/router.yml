@@ -92,6 +92,10 @@ leases:
     - mac: '00:1e:06:31:00:3a'
     - address: '172.23.31.31'
   - host:
+    - name: 'webcam1'
+    - mac: '00:a9:f3:00:60:3d'
+    - address: '172.23.31.32'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'
