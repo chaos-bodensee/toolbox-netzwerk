@@ -3,20 +3,36 @@
 # Which user get which ssh key:
 users:
   l3d:
-   - l3d
+   - l3d@backup.l3d.yt
+   - l3d@derpy.l3d.yt
+   - l3d@mobile.l3d.yt
+   - l3d@pinkie.l3d.yt
+   - l3d@business.wingcon.com
   mart:
-   - mart
+   - mart@waldorfschule-ueberlingen.de
+   - mart@linux-srfv
+   - mart@kirika
+   - mart@ffbsee.de
   matt:
-   - matt
+   - matt@mknoll@Matthiass-MacBook-Pro
+  raoul:
+   - raoul@ccczh
 
-# non admin users on local device
-user:
-  - matt
 
 # admins on local device:
 admins:
   - mart
   - l3d
+  - raoul
+
+# users createt on this host
+accounts:
+  - l3d
+  - mart
+  - raoul
+  - matt
+
+ssh_public_key_store: 'admin_ssh_keys'
 
 # basic system variable
 hostname: "starswirl.tbbs.me"

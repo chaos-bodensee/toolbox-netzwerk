@@ -96,6 +96,10 @@ leases:
     - mac: '00:a9:f3:00:60:3d'
     - address: '172.23.31.32'
   - host:
+    - name: 'preise'
+    - mac: 'b8:27:eB:61:27:53'
+    - address: '172.23.31.33'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'

@@ -11,7 +11,7 @@
    - ssh-auth
    - sshd
   vars:
-    - ansible_ssh_user: 'root'
+    - ansible_ssh_user: 'ansible'
 
 - name: install some fancy packages
   hosts: router
@@ -20,8 +20,6 @@
   - base
   roles:
    - base-packages
-  vars: 
-    - ansible_ssh_user: 'root'
 
 - name: create a fancy feature complete home
   hosts: router
