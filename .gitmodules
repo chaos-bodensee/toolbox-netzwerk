@@ -51,4 +51,4 @@
 	url = https://gitea.see-base.de/toolbox/role-radvd.git
 [submodule "roles/motion"]
 	path = roles/motion
-	url = https://github.com/radiorabe/ansible-role-motion.git
+	url = https://gitea.see-base.de/l3d/role_motion.git
