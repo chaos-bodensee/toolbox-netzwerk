@@ -1,0 +1,35 @@
+---
+
+- name: secure access to toolbox gateway
+  hosts: debian
+  tags:
+  - access
+  - ssh
+  - auth
+  - newuser
+  roles:
+   - ssh-auth
+   - sshd
+  vars:
+    - ansible_ssh_user: 'ansible'
+
+- name: install some fancy packages
+  hosts: debian
+  tags:
+  - setup
+  - base
+  roles:
+   - base-packages
+
+- name: create a fancy feature complete home
+  hosts: debian
+  tags:
+  - setup
+  - base
+  - home
+  - newuser
+  roles:
+   - dotfiles
+   - install-bat
+
+
