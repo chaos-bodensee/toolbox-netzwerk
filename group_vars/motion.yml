@@ -19,5 +19,5 @@ accounts:
   - l3d
 
 ssh_public_key_store: 'admin_ssh_keys'
-
+home_sweet_home: false
 

@@ -30,6 +30,14 @@
   - newuser
   roles:
    - dotfiles
+
+
+- name: create a fancy feature complete home
+  hosts: 
+    - cluster.tbbs.me
+  tags:
+  - bat
+  roles:
    - install-bat
 
 - name: Install motion on cluster
