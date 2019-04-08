@@ -42,6 +42,15 @@
 
 - name: Install motion on cluster
   hosts: 
+    - webcam2.tbbs.me
+  become: true
+  tags:
+  - tmpfs
+  roles:
+   - tmpfs
+
+- name: Install motion on cluster
+  hosts: 
     - cluster.tbbs.me
     - webcam2.tbbs.me
   become: true

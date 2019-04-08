@@ -1,0 +1,4 @@
+---
+ramdisk_owner: pi
+ramdisk_path: '/home/pi/cam'
+ramdisk_size: '512M'
