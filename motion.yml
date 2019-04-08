@@ -1,7 +1,7 @@
 ---
 
 - name: secure access to toolbox gateway
-  hosts: debian
+  hosts: motion
   tags:
   - access
   - ssh
@@ -14,7 +14,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: install some fancy packages
-  hosts: debian
+  hosts: motion
   tags:
   - setup
   - base
@@ -22,7 +22,7 @@
    - base-packages
 
 - name: create a fancy feature complete home
-  hosts: debian
+  hosts: motion
   tags:
   - setup
   - base
@@ -32,4 +32,15 @@
    - dotfiles
    - install-bat
 
+- name: Install motion on cluster
+  hosts: 
+    - cluster.tbbs.me
+    - webcam2.tbbs.me
+  become: true
+  tags:
+  - video
+  - motion
+  - cctv
+  roles:
+   - motion
 
