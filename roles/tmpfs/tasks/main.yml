@@ -1,0 +1,21 @@
+---
+## create a ramdisk
+
+- name: Ensure ramdisk directory exists
+  become: yes
+  file:
+    path: "{{ ramdisk_path }}"
+    state: directory
+    mode: 0755
+    owner: "{{ ramdisk_owner }}"
+    group: "{{ ramdisk_owner }}"
+
+- name: Ensure ramdisk is mounted
+  become: yes
+  mount:
+    name: "{{ ramdisk_path }}"
+    src: tmpfs
+    fstype: tmpfs
+    opts: "size={{ ramdisk_size }}"
+    state: mounted
+
