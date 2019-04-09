@@ -1,7 +1,7 @@
 ---
 add_ethz: false
 restrict_allow_users: false
-sshd_password_authentication: 'yes'
+sshd_password_authentication: 'no'
 
 
 # motion config
