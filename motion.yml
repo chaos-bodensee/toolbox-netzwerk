@@ -40,19 +40,19 @@
   roles:
    - install-bat
 
-- name: Install motion on cluster
+- name: Prepare motion on pi
   hosts: 
     - webcam2.tbbs.me
+    - webcam3.tbbs.me
   become: true
   tags:
   - tmpfs
   roles:
    - tmpfs
 
-- name: Install motion on cluster
+- name: Install motion on cluster.tbbs.me
   hosts: 
     - cluster.tbbs.me
-    - webcam2.tbbs.me
   become: true
   tags:
   - video
@@ -60,4 +60,6 @@
   - cctv
   roles:
    - motion
+
+# you still have to deploy motion from sources, because rasbian binary is tooo old (again)
 
