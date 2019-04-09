@@ -8,15 +8,17 @@ users:
    - l3d@mobile.l3d.yt
    - l3d@pinkie.l3d.yt
    - l3d@business.wingcon.com
-
+  alex:
+   - alex@toolbox
 
 # admins on local device:
 admins:
   - l3d
-
+  - alex
 # users createt on this host
 accounts:
   - l3d
+  - alex
 
 ssh_public_key_store: 'admin_ssh_keys'
 home_sweet_home: false

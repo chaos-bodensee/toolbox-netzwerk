@@ -17,7 +17,8 @@ users:
    - matt@mknoll@Matthiass-MacBook-Pro
   raoul:
    - raoul@ccczh
-
+  alex:
+   - alex@toolbox
 
 # admins on local device:
 admins:
@@ -31,6 +32,7 @@ accounts:
   - mart
   - raoul
   - matt
+  - alex
 
 ssh_public_key_store: 'admin_ssh_keys'
 

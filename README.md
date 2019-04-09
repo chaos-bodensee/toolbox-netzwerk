@@ -157,6 +157,11 @@ ansible-playbook switche.yml --vault-password-file ../toolbox-ansible-vault/tool
 
 ### Tricks:
 
+SSh Jumphost for ansible:
+```bash
+ansible-playbook foo.yml --ssh-common-args="-o ProxyCommand='ssh -W [%h]:%p ansible@vh.tbbs.me'"
+```
+
 Verschlüsselte variabeln erstellen:
 ```bash
 # ansible-vault encrypt_string 'encrypted_secret_string_value' -n string_name >> vars.yml
