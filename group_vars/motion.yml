@@ -22,4 +22,4 @@ accounts:
 
 ssh_public_key_store: 'admin_ssh_keys'
 home_sweet_home: false
-
+only_allow_ed25519: false

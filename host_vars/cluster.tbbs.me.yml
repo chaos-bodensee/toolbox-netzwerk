@@ -6,6 +6,11 @@ sshd_default_allowed_users:
   - "alex"
   - "cam"
 
+generate_ecdsa_too: true
+use_aes256-ctr: true
+use_hmac-sha2-512: true
+only_allow_ed25519: false
+
 # don't forget to add the ssh_access group!
 sshd_default_allowed_groups:
   - "root"
