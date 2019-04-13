@@ -116,6 +116,10 @@ leases:
     - mac: '26:06:2a:fb:5e:c1'
     - address: '172.23.31.37'
   - host:
+    - name: 'treppeled'
+    - mac: '5c:Cf:7f:d9:66:19'
+    - address: '172.23.31.38'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'
