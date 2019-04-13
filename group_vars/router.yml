@@ -117,7 +117,7 @@ leases:
     - address: '172.23.31.37'
   - host:
     - name: 'treppeled'
-    - mac: '5c:Cf:7f:d9:66:19'
+    - mac: '5c:cf:7f:d9:66:19'
     - address: '172.23.31.38'
   - host:
     - name: 'ap-og-sued'
