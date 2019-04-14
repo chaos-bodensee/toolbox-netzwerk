@@ -1,0 +1,12 @@
+[Unit]
+Description=Space status Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/share_space_state/forward.py
+Restart=always
+
+[Install]
+WantedBy=default.target
+

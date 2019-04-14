@@ -1,0 +1,33 @@
+---
+
+- name: Install python and git
+  become: yes
+  package:
+    name: 
+    - python3
+    - git
+    state: present
+
+- name: deploy python space git
+  become: true
+  git:
+    repo: "https://github.com/ToolboxBodensee/share_space_state.git"
+    dest: "/opt/share_space_state"
+
+- name: Copy systemd script
+  become: true
+  copy: 
+    src: files/share-space-state
+    dest: /etc/systemd/system/share-space-state.service
+    mode: 644
+    owner: root
+    group: root
+
+- name: enable & start share-space-state.service
+  become: true
+  systemd:
+    name: share-space-state.service
+    daemon_reload: yes
+    state: started
+    enabled: yes
+
