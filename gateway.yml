@@ -103,4 +103,12 @@
   roles:
    - radvd
 
+- name: deploy some toolbox scripts
+  hosts: router
+  tags:
+  - xtra
+  - extra
+  - toolbox-foo
+  roles:
+   - toolbox-foo
 
