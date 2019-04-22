@@ -35,4 +35,5 @@ Die [Authoren](https://github.com/ToolboxBodensee/toolbox-netzwerk/graphs/contri
 * [NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/NETZWERK.md)
 * [TIPPS.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/TIPPS.md)
 
+* [Ansible-Crashkurs](https://media.ccc.de/v/gpn16-7574-ansible_crashkurs)
 
