@@ -62,4 +62,6 @@
    - motion
 
 # you still have to deploy motion from sources, because rasbian binary is tooo old (again)
+# todo: von alex ein motion.deb packet für den pi bauen lassen, dann geht die motion rolle auch wieder!
+
 
