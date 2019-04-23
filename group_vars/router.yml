@@ -113,7 +113,7 @@ leases:
     - address: '172.23.31.36'
   - host:
     - name: 'webcam4'
-    - mac: '26:06:2a:fb:5e:c1'
+    - mac: 'b8:27:eb:ac:f5:fb'
     - address: '172.23.31.37'
   - host:
     - name: 'treppeled'
