@@ -20,10 +20,6 @@ leases:
     - mac: '00:19:99:74:9e:1f'
     - address: '172.23.31.13'
   - host:
-    - name:  'scootaloo'
-    - mac: '00:30:48:66:f6:82'
-    - address: '172.23.31.14'
-  - host:
     - name:  'mrmeeseeks01'
     - mac: '1c:6f:65:d0:75:66'
     - address: '172.23.31.15'
@@ -125,7 +121,7 @@ leases:
     - address: '172.23.31.39'
   - host:
     - name: 'cam9'
-    - mac: '14:6b:9c:84:98:8f'
+    - mac: '14:6b:9c:86:8c:df'
     - address: '172.23.31.40'
   - host:
     - name: 'ap-og-sued'
