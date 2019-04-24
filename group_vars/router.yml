@@ -120,6 +120,14 @@ leases:
     - mac: '5c:cf:7f:d9:66:19'
     - address: '172.23.31.38'
   - host:
+    - name: 'cam8'
+    - mac: '14:6b:9c:84:98:8f'
+    - address: '172.23.31.39'
+  - host:
+    - name: 'cam9'
+    - mac: '14:6b:9c:84:98:8f'
+    - address: '172.23.31.40'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'
