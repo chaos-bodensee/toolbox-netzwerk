@@ -124,6 +124,10 @@ leases:
     - mac: '14:6b:9c:86:8c:df'
     - address: '172.23.31.40'
   - host:
+    - name: 'hp'
+    - mac: 'f0:92:1c:66:ce:9c'
+    - address: '172.23.31.41'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'
