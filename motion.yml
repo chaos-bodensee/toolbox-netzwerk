@@ -11,7 +11,7 @@
    - ssh-auth
    - sshd
   vars:
-    - ansible_ssh_user: 'ansible'
+    - ansible_ssh_user: 'l3d'
 
 - name: install some fancy packages
   hosts: motion
@@ -44,6 +44,7 @@
     - webcam2.tbbs.me
     - webcam3.tbbs.me
     - webcam4.tbbs.me
+    - webcam5.tbbs.me
   become: true
   tags:
   - tmpfs

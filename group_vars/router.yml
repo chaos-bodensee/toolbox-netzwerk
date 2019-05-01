@@ -132,6 +132,10 @@ leases:
     - mac: 'e8:ab:fa:0a:e3:84'
     - address: '172.23.31.43'
   - host:
+    - name: 'webcam5'
+    - mac: 'b8:27:eb:e1:4b:77'
+    - address: '172.23.31.44'
+  - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
     - address: '172.23.31.241'
