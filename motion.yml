@@ -39,6 +39,17 @@
   roles:
    - install-bat
 
+- name: Install motion on cluster.tbbs.me
+  hosts: 
+    - motion
+  become: true
+  tags:
+  - video
+  - motion
+  - cctv
+  roles:
+   - motion
+
 - name: Prepare motion on pi
   hosts: 
     - webcam2.tbbs.me
@@ -48,19 +59,11 @@
   become: true
   tags:
   - tmpfs
+  - copy
+  - config
   roles:
    - tmpfs
-
-- name: Install motion on cluster.tbbs.me
-  hosts: 
-    - cluster.tbbs.me
-  become: true
-  tags:
-  - video
-  - motion
-  - cctv
-  roles:
-   - motion
+   - copy
 
 # you still have to deploy motion from sources, because rasbian binary is tooo old (again)
 # todo: von alex ein motion.deb packet für den pi bauen lassen, dann geht die motion rolle auch wieder!
