@@ -20,6 +20,7 @@
   - base
   roles:
    - base-packages
+  gather_facts: false
 
 - name: create a fancy feature complete home
   hosts: motion
@@ -30,6 +31,7 @@
   - newuser
   roles:
    - dotfiles
+  gather_facts: false
 
 - name: create a fancy feature complete home
   hosts: 
@@ -38,6 +40,7 @@
   - bat
   roles:
    - install-bat
+  gather_facts: false
 
 - name: Install motion on cluster.tbbs.me
   hosts: 
@@ -49,6 +52,7 @@
   - cctv
   roles:
    - motion
+  gather_facts: false
 
 - name: Prepare motion on pi
   hosts: 
@@ -67,7 +71,12 @@
    - copy
 
 - name: load kernel module v4l
-  hosts: motion
+  hosts:
+    - webcam2.tbbs.me
+    - webcam3.tbbs.me
+    - webcam4.tbbs.me
+    - webcam5.tbbs.me
+    - webcam6.tbbs.me
   become: true
   tags:
   - v4l
@@ -75,6 +84,8 @@
   roles:
     - kernel_modules
   vars:
-    - name: v4l
-      autoload: true
+    kernel_modules:
+      - name: 'bcm2835-v4l2'
+        autoload: true
+  gather_facts: false
 
