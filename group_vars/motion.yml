@@ -24,19 +24,27 @@ ssh_public_key_store: 'admin_ssh_keys'
 home_sweet_home: false
 only_allow_ed25519: false
 
+# disable the most motion stuff
+motion_preflight: false
+motion_install: false
+install_on_pi: false
+motion_manual_install: true
+motion_configure: false
+motion_bin_path_systemd: '/usr/local/bin/motion'
+
 # copy some motion config
 copy_these_files:
- - { src: 'files/motion/{{ ansible_hostname }}-motion.cfg', dest: "/usr/local/etc/motion/motion.cfg" }
- - { src: 'files/motion/cam01.cfg', dest: "/usr/local/etc/motion/cam01.cfg" }
- - { src: 'files/motion/cam02.cfg', dest: "/usr/local/etc/motion/cam02.cfg" }
- - { src: 'files/motion/cam03.cfg', dest: "/usr/local/etc/motion/cam03.cfg" }
- - { src: 'files/motion/cam04.cfg', dest: "/usr/local/etc/motion/cam04.cfg" }
- - { src: 'files/motion/cam05.cfg', dest: "/usr/local/etc/motion/cam05.cfg" }
- - { src: 'files/motion/cam06.cfg', dest: "/usr/local/etc/motion/cam06.cfg" }
- - { src: 'files/motion/cam07.cfg', dest: "/usr/local/etc/motion/cam07.cfg" }
- - { src: 'files/motion/cam08.cfg', dest: "/usr/local/etc/motion/cam08.cfg" }
- - { src: 'files/motion/cam09.cfg', dest: "/usr/local/etc/motion/cam09.cfg" }
- - { src: 'files/motion/cam0a.cfg', dest: "/usr/local/etc/motion/cam0a.cfg" }
- - { src: 'files/motion/cam0b.cfg', dest: "/usr/local/etc/motion/cam0c.cfg" }
- - { src: 'files/motion/cam0c.cfg', dest: "/usr/local/etc/motion/cam0b.cfg" }
- - { src: 'files/motion/cam0d.cfg', dest: "/usr/local/etc/motion/cam0d.cfg" }
+ - { src: 'files/motion/{{ ansible_hostname }}-motion.cfg', dest: "/usr/local/etc/motion/motion.conf" }
+ - { src: 'files/motion/cam01.cfg', dest: "/usr/local/etc/motion/cam01.conf" }
+ - { src: 'files/motion/cam02.cfg', dest: "/usr/local/etc/motion/cam02.conf" }
+ - { src: 'files/motion/cam03.cfg', dest: "/usr/local/etc/motion/cam03.conf" }
+ - { src: 'files/motion/cam04.cfg', dest: "/usr/local/etc/motion/cam04.conf" }
+ - { src: 'files/motion/cam05.cfg', dest: "/usr/local/etc/motion/cam05.conf" }
+ - { src: 'files/motion/cam06.cfg', dest: "/usr/local/etc/motion/cam06.conf" }
+ - { src: 'files/motion/cam07.cfg', dest: "/usr/local/etc/motion/cam07.conf" }
+ - { src: 'files/motion/cam08.cfg', dest: "/usr/local/etc/motion/cam08.conf" }
+ - { src: 'files/motion/cam09.cfg', dest: "/usr/local/etc/motion/cam09.conf" }
+ - { src: 'files/motion/cam0a.cfg', dest: "/usr/local/etc/motion/cam0a.conf" }
+ - { src: 'files/motion/cam0b.cfg', dest: "/usr/local/etc/motion/cam0c.conf" }
+ - { src: 'files/motion/cam0c.cfg', dest: "/usr/local/etc/motion/cam0b.conf" }
+ - { src: 'files/motion/cam0d.cfg', dest: "/usr/local/etc/motion/cam0d.conf" }
