@@ -10,3 +10,4 @@ motion_target_dir: '/home/pi/cam'
 motion_stream_localhost: 'off'
 motion_install: false
 
+install_on_pi: true

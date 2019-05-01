@@ -52,3 +52,6 @@
 [submodule "roles/motion"]
 	path = roles/motion
 	url = https://gitea.see-base.de/l3d/role_motion.git
+[submodule "roles/kernel_modules"]
+	path = roles/kernel_modules
+	url = https://github.com/galexrt/ansible-kernel-modules.git
