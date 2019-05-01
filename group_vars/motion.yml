@@ -30,7 +30,7 @@ motion_install: false
 install_on_pi: false
 motion_manual_install: true
 motion_configure: false
-motion_bin_path_systemd: '/usr/local/bin/motion'
+motion_bin_path_systemd: '/usr/local/bin'
 
 # copy some motion config
 copy_these_files:
