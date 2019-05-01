@@ -66,7 +66,15 @@
    - tmpfs
    - copy
 
-# you still have to deploy motion from sources, because rasbian binary is tooo old (again)
-# todo: von alex ein motion.deb packet für den pi bauen lassen, dann geht die motion rolle auch wieder!
-
+- name: load kernel module v4l
+  hosts: motion
+  become: true
+  tags:
+  - v4l
+  - video
+  roles:
+    - kernel_modules
+  vars:
+    - name: v4l
+      autoload: true
 
