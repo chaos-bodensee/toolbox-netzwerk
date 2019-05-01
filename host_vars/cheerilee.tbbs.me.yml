@@ -22,12 +22,17 @@ interface:
     name: "Freifunk output"
     vlan: 7
   GigabitEthernet0/42:
-    name: "Uplink AP"
+    name: "Uplink E-werkstatt - AP - dose22"
+    vlan: 't'
+  GigabitEthernet0/43:
+    name: "Uplink AP bibliothek - dose19 - rechts"
     vlan: 't'
   GigabitEthernet0/44:
-    name: "Uplink Keller"
-    vlan: 't'
+    name: "besprechungsraum fenster - dose 3"
+    vlan: '7'
+  GigabitEthernet0/45:
+    name: "Uplink Switch Fraesenraum"
+    vlan: 0
   GigabitEthernet0/46:
-    name: "Uplink Keller"
+    name: "Uplink Keller + keller AP"
     vlan: 't'
- 
