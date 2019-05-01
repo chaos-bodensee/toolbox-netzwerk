@@ -1,0 +1,4 @@
+---
+copy_to_user: "{{ ansible_user_id }}"
+copy_these_files:
+ - { src: 'files/background.png', dest: "/home/{{ copy_to_user }}/.config/background.png" }
