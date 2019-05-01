@@ -35,16 +35,16 @@ motion_bin_path_systemd: '/usr/local/bin/motion'
 # copy some motion config
 copy_these_files:
  - { src: 'files/motion/{{ ansible_hostname }}-motion.cfg', dest: "/usr/local/etc/motion/motion.conf" }
- - { src: 'files/motion/cam01.cfg', dest: "/usr/local/etc/motion/cam01.conf" }
- - { src: 'files/motion/cam02.cfg', dest: "/usr/local/etc/motion/cam02.conf" }
- - { src: 'files/motion/cam03.cfg', dest: "/usr/local/etc/motion/cam03.conf" }
- - { src: 'files/motion/cam04.cfg', dest: "/usr/local/etc/motion/cam04.conf" }
- - { src: 'files/motion/cam05.cfg', dest: "/usr/local/etc/motion/cam05.conf" }
- - { src: 'files/motion/cam06.cfg', dest: "/usr/local/etc/motion/cam06.conf" }
- - { src: 'files/motion/cam07.cfg', dest: "/usr/local/etc/motion/cam07.conf" }
- - { src: 'files/motion/cam08.cfg', dest: "/usr/local/etc/motion/cam08.conf" }
- - { src: 'files/motion/cam09.cfg', dest: "/usr/local/etc/motion/cam09.conf" }
- - { src: 'files/motion/cam0a.cfg', dest: "/usr/local/etc/motion/cam0a.conf" }
- - { src: 'files/motion/cam0b.cfg', dest: "/usr/local/etc/motion/cam0c.conf" }
- - { src: 'files/motion/cam0c.cfg', dest: "/usr/local/etc/motion/cam0b.conf" }
- - { src: 'files/motion/cam0d.cfg', dest: "/usr/local/etc/motion/cam0d.conf" }
+ - { src: 'files/motion/cam01.cfg', dest: "/usr/local/etc/motion/cam1.conf" }
+ - { src: 'files/motion/cam02.cfg', dest: "/usr/local/etc/motion/cam2.conf" }
+ - { src: 'files/motion/cam03.cfg', dest: "/usr/local/etc/motion/cam3.conf" }
+ - { src: 'files/motion/cam04.cfg', dest: "/usr/local/etc/motion/cam4.conf" }
+ - { src: 'files/motion/cam05.cfg', dest: "/usr/local/etc/motion/cam5.conf" }
+ - { src: 'files/motion/cam06.cfg', dest: "/usr/local/etc/motion/cam6.conf" }
+ - { src: 'files/motion/cam07.cfg', dest: "/usr/local/etc/motion/cam7.conf" }
+ - { src: 'files/motion/cam08.cfg', dest: "/usr/local/etc/motion/cam8.conf" }
+ - { src: 'files/motion/cam09.cfg', dest: "/usr/local/etc/motion/cam9.conf" }
+ - { src: 'files/motion/cam0a.cfg', dest: "/usr/local/etc/motion/cama.conf" }
+ - { src: 'files/motion/cam0b.cfg', dest: "/usr/local/etc/motion/camb.conf" }
+ - { src: 'files/motion/cam0c.cfg', dest: "/usr/local/etc/motion/camc.conf" }
+ - { src: 'files/motion/cam0d.cfg', dest: "/usr/local/etc/motion/camd.conf" }
