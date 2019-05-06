@@ -89,3 +89,21 @@
         autoload: true
   gather_facts: false
 
+- name: Create special cronjob
+  hosts:
+    - webcam2.tbbs.me
+    - webcam3.tbbs.me
+    - webcam4.tbbs.me
+    - webcam5.tbbs.me
+    - webcam6.tbbs.me
+  tags:
+    - cronie
+  become: true
+  tasks:
+  - name: say cron 'always copy daily'
+    cron:
+      name: "move away all files in special folder"
+      special_time: daily
+      job: "rsync --remove-source-files --append -a /home/pi/cam/ cam@cluster.tbbs.me:~/recording/fallback/"
+      user: pi
+
