@@ -61,6 +61,7 @@
     - webcam4.tbbs.me
     - webcam5.tbbs.me
     - webcam6.tbbs.me
+    - webcam7.tbbs.me
   become: true
   tags:
   - tmpfs
@@ -77,6 +78,7 @@
     - webcam4.tbbs.me
     - webcam5.tbbs.me
     - webcam6.tbbs.me
+    - webcam7.tbbs.me
   become: true
   tags:
   - v4l
@@ -96,6 +98,7 @@
     - webcam4.tbbs.me
     - webcam5.tbbs.me
     - webcam6.tbbs.me
+    - webcam7.tbbs.me
   tags:
     - cronie
   become: true
