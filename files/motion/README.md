@@ -22,4 +22,7 @@ Hier die verteilung der Kameras:
  * webcam6:
     * cam8
     * cam9
+    
+ * webcam7:
+    * camc
 
