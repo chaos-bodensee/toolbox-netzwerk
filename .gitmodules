@@ -55,3 +55,6 @@
 [submodule "roles/kernel_modules"]
 	path = roles/kernel_modules
 	url = https://github.com/galexrt/ansible-kernel-modules.git
+[submodule "roles/pi-setup"]
+	path = roles/pi-setup
+	url = https://github.com/DO1JLR/role_raspberry_pi_ansible_preperation.git

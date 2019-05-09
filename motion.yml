@@ -1,4 +1,13 @@
 ---
+- name: Setup Raspberry Pi to speak with ansible
+  gather_facts: False
+  become: true
+  tags:
+  - always
+  - raspberry
+  - setup
+  role:
+    - pi-setup
 
 - name: secure access to toolbox gateway
   hosts: motion
