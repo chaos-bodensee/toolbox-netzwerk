@@ -125,5 +125,5 @@ radvd_interface: 'enp1s0'
 radvd_prefix: '2003:a:13b:9000::/64'
 radvd_dns: '2003:a:13b:9000::1'
 
-# make ssh more unsecure
-only_allow_ed25519: false
+# stop making ssh more unsecure
+only_allow_ed25519: true
