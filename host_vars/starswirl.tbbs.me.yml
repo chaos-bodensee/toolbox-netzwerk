@@ -19,6 +19,8 @@ users:
    - raoul@ccczh
   alex:
    - alex@toolbox
+  maxbachmann
+   - maxbachmann@toolbox_ed25519.pub
 
 # admins on local device:
 admins:
