@@ -1,6 +1,6 @@
 [Unit]
 Description=Space status Service
-After=network.target
+After=pppoe.target
 
 [Service]
 Type=simple
