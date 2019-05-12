@@ -73,6 +73,9 @@
   - ipv6
   - dhcpv6
   - telekom
+  - wide
+  - wide-dhcp
+  - wide-dhcpv6
   roles:
    - wide_dhcpv6
 

@@ -121,9 +121,9 @@ use_pppoe_plugin: true
 
 # variables for wide_dhcpv6_client
 wide_dhcpv6_interface: "ppp0"
-wide_prefix_interfaces:
-  - "enp1s0"
-ugly_telekom_wide_dhcpv6_fix: true
+wide_prefix_interfaces: "enp1s0/1"
+dhcpcd_hostname: vh.tbbs.me
+wide_wait_for_service: pppoe.target
 
 # Radvd parameters:
 radvd_interface: 'enp1s0'
