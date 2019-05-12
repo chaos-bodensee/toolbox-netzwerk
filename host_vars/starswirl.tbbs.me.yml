@@ -20,7 +20,7 @@ users:
   alex:
    - alex@toolbox
   maxbachmann:
-   - maxbachmann@toolbox_ed25519.pub
+   - maxbachmann@toolbox_ed25519
 
 # admins on local device:
 admins:
