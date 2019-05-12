@@ -82,6 +82,15 @@
   - unbound
   roles:
    - tb-unbound
+   
+- name: configure pihole
+  hosts: router
+  tags:
+  - network
+  - dns
+  - pihole
+  roles:
+   - pihole
 
 - name: configure router services -> dhcpd
   hosts: router
