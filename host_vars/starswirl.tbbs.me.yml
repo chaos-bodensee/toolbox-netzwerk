@@ -19,14 +19,14 @@ users:
    - raoul@ccczh
   alex:
    - alex@toolbox
-  maxbachmann
-   - maxbachmann@toolbox_ed25519.pub
 
 # admins on local device:
 admins:
   - mart
   - l3d
   - raoul
+  - alex
+  - maxbachmann
 
 # users createt on this host
 accounts:
@@ -35,6 +35,7 @@ accounts:
   - raoul
   - matt
   - alex
+  - maxbachmann
 
 ssh_public_key_store: 'admin_ssh_keys'
 
@@ -127,5 +128,5 @@ radvd_interface: 'enp1s0'
 radvd_prefix: '2003:a:13b:9000::/64'
 radvd_dns: '2003:a:13b:9000::1'
 
-# make ssh more unsecure
-only_allow_ed25519: false
+# stop making ssh more unsecure
+only_allow_ed25519: true
