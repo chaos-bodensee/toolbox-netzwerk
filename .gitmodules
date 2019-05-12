@@ -58,3 +58,6 @@
 [submodule "roles/pi-setup"]
 	path = roles/pi-setup
 	url = https://github.com/DO1JLR/role_raspberry_pi_ansible_preperation.git
+[submodule "roles/pihole"]
+	path = roles/pihole
+	url = https://github.com/maxbachmann-ansible/role-pihole.git
