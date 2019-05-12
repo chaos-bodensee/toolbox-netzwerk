@@ -130,3 +130,11 @@ radvd_dns: '2003:a:13b:9000::1'
 
 # stop making ssh more unsecure
 only_allow_ed25519: true
+
+# Pihole config
+network_interface: {{ ipv4_dhcp_interface }}
+ipv4_address: 172.23.16.2
+ipv6_address: 2003:a:13b:9000::2
+dns_server_1: 172.23.16.1#53
+dns_server_2: 2003:a:13b:9000::1#53
+install_web_server: false
