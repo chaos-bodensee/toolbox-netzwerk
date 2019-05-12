@@ -171,3 +171,11 @@ leases:
     - name: 'cheerilee'
     - mac: '00:1c:0e:b7:8e:c0'
     - address: '172.23.31.254'
+
+# Pihole config
+network_interface: enp1s0
+ipv4_address: 172.23.16.2
+ipv6_address: 2003:a:13b:9000::2
+dns_server_1: 172.23.16.1#53
+dns_server_2: 2003:a:13b:9000::1#53
+install_web_server: false
