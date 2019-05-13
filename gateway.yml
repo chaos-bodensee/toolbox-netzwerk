@@ -17,6 +17,7 @@
 
 - name: install some fancy packages
   hosts: router
+  gather_facts: False
   tags:
   - setup
   - base
@@ -40,6 +41,7 @@
 
 - name: configure the basic network
   hosts: router
+  gather_facts: False
   tags:
   - networking
   - resolver
@@ -54,6 +56,7 @@
 
 - name: configure basic routing and firewall (e.g. NAT)
   hosts: router
+  gather_facts: False
   tags:
   - setup
   - network
@@ -73,6 +76,7 @@
    - pppoe
 
 - name: configure router services -> [WAN] dhcpv6-client
+  gather_facts: False
   hosts: router
   tags:
   - network
@@ -87,6 +91,7 @@
    - wide_dhcpv6
 
 - name: configure router services -> dns
+  gather_facts: False
   hosts: router
   tags:
   - network
@@ -96,6 +101,7 @@
    - tb-unbound
 
 - name: configure router services -> dhcpd
+  gather_facts: False
   hosts: router
   tags:
   - network
@@ -116,6 +122,7 @@
    - radvd
 
 - name: deploy some toolbox scripts
+  gather_facts: False
   hosts: router
   tags:
   - xtra
