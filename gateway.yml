@@ -20,6 +20,8 @@
   tags:
   - setup
   - base
+  - packages
+  - base-packages 
   roles:
    - base-packages
 
@@ -30,6 +32,8 @@
   - base
   - home
   - newuser
+  - dotfiles
+  - install-bat
   roles:
    - dotfiles
    - install-bat
@@ -37,6 +41,9 @@
 - name: configure the basic network
   hosts: router
   tags:
+  - networking
+  - resolver
+  - sysctl
   - setup
   - network
   - ip
