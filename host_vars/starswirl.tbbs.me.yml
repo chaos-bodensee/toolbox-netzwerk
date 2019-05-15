@@ -28,7 +28,6 @@ admins:
   - l3d
   - raoul
   - alex
-  - maxbachmann
 
 # users createt on this host
 accounts:
@@ -131,4 +130,4 @@ radvd_prefix: '2003:a:13b:9000::/64'
 radvd_dns: '2003:a:13b:9000::1'
 
 # stop making ssh more unsecure
-only_allow_ed25519: true
+only_allow_ed25519: false # old shit for alex
