@@ -1,13 +1,13 @@
 ---
-- name: Setup Raspberry Pi to speak with ansible
-  gather_facts: False
-  become: true
-  tags:
-  - always
-  - raspberry
-  - setup
-  role:
-    - pi-setup
+#- name: Setup Raspberry Pi to speak with ansible
+#  gather_facts: False
+#  become: true
+#  tags:
+#  - always
+#  - raspberry
+#  - setup
+#  roles:
+#    - pi-setup
 
 - name: secure access to toolbox gateway
   hosts: motion
@@ -65,12 +65,7 @@
 
 - name: Prepare motion on pi
   hosts: 
-    - webcam2.tbbs.me
-    - webcam3.tbbs.me
-    - webcam4.tbbs.me
-    - webcam5.tbbs.me
     - webcam6.tbbs.me
-    - webcam7.tbbs.me
   become: true
   tags:
   - tmpfs
@@ -82,12 +77,7 @@
 
 - name: load kernel module v4l
   hosts:
-    - webcam2.tbbs.me
-    - webcam3.tbbs.me
-    - webcam4.tbbs.me
-    - webcam5.tbbs.me
     - webcam6.tbbs.me
-    - webcam7.tbbs.me
   become: true
   tags:
   - v4l
@@ -102,12 +92,7 @@
 
 - name: Create special cronjob
   hosts:
-    - webcam2.tbbs.me
-    - webcam3.tbbs.me
-    - webcam4.tbbs.me
-    - webcam5.tbbs.me
     - webcam6.tbbs.me
-    - webcam7.tbbs.me
   tags:
     - cronie
   become: true
