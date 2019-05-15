@@ -108,7 +108,7 @@ leases:
     - mac: 'b8:27:eb:6e:e5:2f'
     - address: '172.23.31.36'
   - host:
-    - name: 'webcam4'
+    - name: 'cctv'
     - mac: 'b8:27:eb:f9:a0:ae'
     - address: '172.23.31.37'
   - host:
