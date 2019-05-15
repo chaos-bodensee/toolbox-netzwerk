@@ -28,6 +28,9 @@ Damit wird dann die passende Route zu seinem Prefix gesetzt.
 **Achtung:**, die Toolbox hat feste IP und IPv4 Adressen. Daher können die hier teilweise fest einkonfiguriert werden.
 Für dynamische IP Adressen sieht das anders möglicherweise anders aus. Feste IP Adressen kosten aber idr. nur ein paar Euro mehr.
 
+**Achtung:**
+Momentan ist das IPv6 noch etwas buggy. L3D, Max oder Alex sagen gerne, wieso!
+
  Ansible-Vault
 ---------------
 
@@ -41,10 +44,10 @@ Das Playbook kann wie folgt ausgeführt werden, sobald das git mit der ansible-v
 ansible-playbook switche.yml --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd
 ``` 
 
-
 ### Tricks:
 
 SSh Jumphost for ansible:
 ```bash
 ansible-playbook foo.yml --ssh-common-args="-o ProxyCommand='ssh -W [%h]:%p ansible@vh.tbbs.me'"
 ```
+
