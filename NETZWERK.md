@@ -25,11 +25,8 @@
               |
   [S³]-------[S²] <<-- Keller
  Rack1     Rack2
-  |||         '---------------.
-   |[Se¹: mrmeeseeks01]       |
-   |[Se²: mrmeeseeks02]       |
-   |[Se³: openstack]----------'
-   |[Se⁴: kellernas]
+  |||        |||
+ [Srv¹]    [Srv²]
  
 ```
 
@@ -55,16 +52,20 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 
 [S⁴] Besprechungsraum Switch (ruum42)
 
+[Srv¹] Server im linken Rack im Keller
+ + bisher nicht Dokumentiert
+
+[Srv²] Server im rechten Rack im Keller
+ + bisher nicht Dokumentiert
+```
 
 ### Weitere von ansible betreute Geräte:
 
 * Gruppe Motion:
   * cluster.tbbs.me
     * bietet temporären Filestorage für motion
-  * webcam2.tbbs.me
+  * webcam6.tbbs.me
     * Raspi mit motion installiert
-  * webcam3.tbbs.me
-    * Raspi mit motion installiert
-  * webcam4.tbbs.me
-    * installation fehlgeschlagen, Hardware erkennt webcam nicht
+
+
 
