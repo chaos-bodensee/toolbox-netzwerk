@@ -140,13 +140,9 @@ leases:
     - mac: 'b8:27:eb:db:7c:62'
     - address: '172.23.31.45'
   - host:
-    - name: 'webcam7'
+    - name: 'seeboerse-touch'
     - mac: 'b8:27:eb:97:b0:9b'
     - address: '172.23.31.46'
-  - host:
-    - name: 'seeboerse-touch'
-    - mac: 'b8:27:eb:65:d7:a4'
-    - address: '172.23.31.47'
   - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
