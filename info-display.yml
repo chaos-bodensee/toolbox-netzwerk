@@ -1,0 +1,106 @@
+---
+#- name: Setup Raspberry Pi to speak with ansible
+#  gather_facts: False
+#  become: true
+#  tags:
+#  - always
+#  - raspberry
+#  - setup
+#  roles:
+#    - pi-setup
+
+- name: secure access to toolbox gateway
+  hosts: motion
+  tags:
+  - access
+  - ssh
+  - auth
+  - newuser
+  roles:
+   - ssh-auth
+   - sshd
+  vars:
+    - ansible_ssh_user: 'ansible'
+
+- name: install some fancy packages
+  hosts: motion
+  tags:
+  - setup
+  - base
+  roles:
+   - base-packages
+  gather_facts: false
+
+- name: create a fancy feature complete home
+  hosts: motion
+  tags:
+  - setup
+  - base
+  - home
+  - newuser
+  roles:
+   - dotfiles
+  gather_facts: false
+
+- name: create a fancy feature complete home
+  hosts: 
+    - cluster.tbbs.me
+  tags:
+  - bat
+  roles:
+   - install-bat
+  gather_facts: false
+
+- name: Install motion on cluster.tbbs.me
+  hosts: 
+    - motion
+  become: true
+  tags:
+  - video
+  - motion
+  - cctv
+  roles:
+   - motion
+  gather_facts: false
+
+- name: Prepare motion on pi
+  hosts: 
+    - cctv.tbbs.me
+  become: true
+  tags:
+  - tmpfs
+  - copy
+  - config
+  roles:
+   - tmpfs
+   - copy
+
+- name: load kernel module v4l
+  hosts:
+    - cctv.tbbs.me
+  become: true
+  tags:
+  - v4l
+  - video
+  roles:
+    - kernel_modules
+  vars:
+    kernel_modules:
+      - name: 'bcm2835-v4l2'
+        autoload: true
+  gather_facts: false
+
+- name: Create special cronjob
+  hosts:
+    - cctv.tbbs.me
+  tags:
+    - cronie
+  become: true
+  tasks:
+  - name: say cron 'always copy daily'
+    cron:
+      name: "move away all files in special folder"
+      special_time: daily
+      job: "rsync --remove-source-files --append -a /home/pi/cam/ cam@cluster.tbbs.me:~/recording/fallback/"
+      user: pi
+
