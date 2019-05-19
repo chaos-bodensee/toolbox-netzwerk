@@ -26,4 +26,7 @@ add_ethz: false
 restrict_allow_users: false
 sshd_password_authentication: 'no'
 
-
+docker_pi_group_users:
+ - pi
+ - l3d
+ - alex
