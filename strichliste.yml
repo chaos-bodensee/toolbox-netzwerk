@@ -42,5 +42,17 @@
    - dotfiles
   gather_facts: false
 
+- name: create a fancy feature complete home
+  hosts: strichliste
+  tags:
+  - ugly
+  - sh1t
+  - docker
+  - docker-pi
+  roles:
+   - docker-pi
+  gather_facts: true
+
+
 
 
