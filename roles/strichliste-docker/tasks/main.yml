@@ -41,6 +41,24 @@
       - nginx
       - php7.3-fpm
       - php-fpm
+      - php7.3-mysql  
+      - mariadb-server
+      - python-mysqldb
+      - python3-mysqldb
+    state: present
+
+- name: Create database user with name 'strichliste' and password '32YourPassWord42' with all database privileges
+  become: true
+  mysql_user:
+    name: strichliste
+    password: 32YourPassWord42
+    priv: '*.*:ALL'
+    state: present
+
+- name: Create a new database with name 'strichliste'
+  become: true
+  mysql_db:
+    name: strichliste
     state: present
 
 - name: copy nginx vhost config
@@ -85,7 +103,6 @@
   args: 
     chdir: /opt/strichliste2-backend
     creates: /opt/strichliste2-backend/var/app.db
-  when: generate_new_database|bool
 
 - name: migrate database schema
   become: yes
