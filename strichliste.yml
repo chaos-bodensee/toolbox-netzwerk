@@ -41,14 +41,22 @@
    - dotfiles
   gather_facts: false
 
-- name: strichliste-docker
+- name: strichliste-backend
   hosts: strichliste
   tags:
-  - strichliste-docker
-  - docker-pi
+  - backend
   - strichliste
   roles:
-   - strichliste-docker
+   - strichliste-backend
+  gather_facts: true
+
+- name: strichliste-frontend
+  hosts: strichliste
+  tags:
+  - frontend
+  - strichliste
+  roles:
+   - strichliste-frontend
   gather_facts: true
 
 

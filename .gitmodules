@@ -64,3 +64,6 @@
 [submodule "roles/strichliste-backend"]
 	path = roles/strichliste-backend
 	url = https://github.com/chaos-bodensee/role_install_strichliste_backened.git
+[submodule "roles/strichliste-frontend"]
+	path = roles/strichliste-frontend
+	url = https://github.com/DO1JLR/role_strichliste_frontend.git
