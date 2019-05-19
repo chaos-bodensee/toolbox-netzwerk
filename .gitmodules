@@ -61,6 +61,3 @@
 [submodule "roles/info-beamer"]
 	path = roles/info-beamer
 	url = https://gitea.see-base.de/toolbox/role_info-beamer.git
-[submodule "roles/docker-pi"]
-	path = roles/docker-pi
-	url = https://github.com/Benaud12/docker-pi.git

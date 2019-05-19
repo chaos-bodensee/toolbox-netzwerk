@@ -30,3 +30,7 @@ docker_pi_group_users:
  - pi
  - l3d
  - alex
+
+generate_new_database: false
+
+import_or_migrate_database_file: /root/old_strichliste.database.sqlite

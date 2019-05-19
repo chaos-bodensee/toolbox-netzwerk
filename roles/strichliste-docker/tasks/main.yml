@@ -44,3 +44,61 @@
     dest: /etc/nginx/sites-enabled/strichliste-backend
     owner: root
     mode: 0644
+
+- name: remove default nginx vhost file
+  file: 
+    dest: /etc/nginx/sites-enabled/default
+    state: absent
+      
+- name: clone backend code
+  git: 
+    repo: https://github.com/strichliste/server.git
+    dest: /opt/strichliste2-backend
+    update: True
+    
+- name: install composer
+  shell: |
+    curl -sS https://getcomposer.org/installer | 
+    php -- --install-dir=/usr/local/bin --filename=composer
+  args:
+    creates: /usr/local/bin/composer
+  
+- name: install php dependencies
+  shell: composer install
+  args: 
+    chdir: /opt/strichliste2-backend
+    creates: /opt/strichliste2-backend/vendor
+
+- name: create database schema
+  shell: php bin/console doctrine:schema:create
+  args: 
+    chdir: /opt/strichliste2-backend
+    creates: /opt/strichliste2-backend/var/app.db
+  when: generate_new_database|bool
+
+- name: migrate database schema
+  shell: "php bin/console app:import {{ import_or_migrate_database_file }}"
+  args: 
+    chdir: /opt/strichliste2-backend
+    creates: /opt/strichliste2-backend/var/app.db
+  when: 
+    - not generate_new_database|bool
+    - import_or_migrate_database_file is defined
+
+- name: set file permissions for php backend
+  file:
+    dest: /opt/strichliste2-backend/var
+    owner: www-data
+    group: www-data
+    mode: 0755
+    recurse: True
+
+- name: restart nginx 
+  service: 
+    name: nginx
+    state: restarted
+      
+- name: restart php-fpm 
+  service: 
+    name: php7.3-fpm
+    state: restarted
