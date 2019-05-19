@@ -26,11 +26,6 @@ add_ethz: false
 restrict_allow_users: false
 sshd_password_authentication: 'no'
 
-docker_pi_group_users:
- - pi
- - l3d
- - alex
+generate_new_database: true
 
-generate_new_database: false
-
-import_or_migrate_database_file: /root/old_strichliste.database.sqlite
+# import_or_migrate_database_file: /root/old_strichliste.database.sqlite

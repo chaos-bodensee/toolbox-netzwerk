@@ -41,17 +41,6 @@
    - dotfiles
   gather_facts: false
 
-- name: create docker (yay... not)
-  hosts: strichliste
-  tags:
-  - ugly
-  - sh1t
-  - docker
-  - docker-pi
-  roles:
-   - docker-pi
-  gather_facts: true
-
 - name: strichliste-docker
   hosts: strichliste
   tags:

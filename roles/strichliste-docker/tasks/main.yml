@@ -25,16 +25,22 @@
   apt:
     name: 
       - php7.3
+      - php
       - git 
       - curl  
       - unzip
       - sqlite3
-      - php7.3-cli 
+      - php7.3-cli
+      - php-cli
       - php7.3-xml
+      - php-xml
       - php7.3-zip
+      - php-zip
       - php7.3-sqlite3
+      - php-sqlite3
       - nginx
       - php7.3-fpm
+      - php-fpm
     state: present
 
 - name: copy nginx vhost config
@@ -46,17 +52,20 @@
     mode: 0644
 
 - name: remove default nginx vhost file
+  become: yes
   file: 
     dest: /etc/nginx/sites-enabled/default
     state: absent
       
 - name: clone backend code
+  become: yes
   git: 
     repo: https://github.com/strichliste/server.git
     dest: /opt/strichliste2-backend
     update: True
     
 - name: install composer
+  become: yes
   shell: |
     curl -sS https://getcomposer.org/installer | 
     php -- --install-dir=/usr/local/bin --filename=composer
@@ -64,12 +73,14 @@
     creates: /usr/local/bin/composer
   
 - name: install php dependencies
+  become: yes
   shell: composer install
   args: 
     chdir: /opt/strichliste2-backend
     creates: /opt/strichliste2-backend/vendor
 
 - name: create database schema
+  become: yes
   shell: php bin/console doctrine:schema:create
   args: 
     chdir: /opt/strichliste2-backend
@@ -77,6 +88,7 @@
   when: generate_new_database|bool
 
 - name: migrate database schema
+  become: yes
   shell: "php bin/console app:import {{ import_or_migrate_database_file }}"
   args: 
     chdir: /opt/strichliste2-backend
@@ -86,6 +98,7 @@
     - import_or_migrate_database_file is defined
 
 - name: set file permissions for php backend
+  become: yes
   file:
     dest: /opt/strichliste2-backend/var
     owner: www-data
@@ -94,11 +107,13 @@
     recurse: True
 
 - name: restart nginx 
+  become: yes
   service: 
     name: nginx
     state: restarted
       
 - name: restart php-fpm 
+  become: yes
   service: 
     name: php7.3-fpm
     state: restarted
