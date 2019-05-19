@@ -75,20 +75,20 @@
   roles:
    - pppoe
 
-#- name: configure router services -> [WAN] dhcpv6-client
-#  gather_facts: False
-#  hosts: router
-#  tags:
-#  - network
-#  - pppoe
-#  - ipv6
-#  - dhcpv6
-#  - telekom
-#  - wide
-#  - wide-dhcp
-#  - wide-dhcpv6
-#  roles:
-#   - wide_dhcpv6
+- name: configure router services -> [WAN] dhcpv6-client
+  gather_facts: True
+  hosts: router
+  tags:
+  - network
+  - pppoe
+  - ipv6
+  - dhcpv6
+  - telekom
+  - wide
+  - wide-dhcp
+  - wide-dhcpv6
+  roles:
+   - wide_dhcpv6
 
 - name: configure router services -> dns
   gather_facts: False
