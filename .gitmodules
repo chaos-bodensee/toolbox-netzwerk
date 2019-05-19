@@ -61,3 +61,6 @@
 [submodule "roles/info-beamer"]
 	path = roles/info-beamer
 	url = https://gitea.see-base.de/toolbox/role_info-beamer.git
+[submodule "roles/strichliste-backend"]
+	path = roles/strichliste-backend
+	url = https://github.com/chaos-bodensee/role_install_strichliste_backened.git
