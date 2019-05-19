@@ -1,7 +1,6 @@
 ---
 #- name: Setup Raspberry Pi to speak with ansible
 #  gather_facts: False
-#  become: true
 #  tags:
 #  - always
 #  - raspberry
@@ -42,7 +41,7 @@
    - dotfiles
   gather_facts: false
 
-- name: create a fancy feature complete home
+- name: create docker (yay... not)
   hosts: strichliste
   tags:
   - ugly
@@ -53,6 +52,14 @@
    - docker-pi
   gather_facts: true
 
-
+- name: strichliste-docker
+  hosts: strichliste
+  tags:
+  - strichliste-docker
+  - docker-pi
+  - strichliste
+  roles:
+   - strichliste-docker
+  gather_facts: true
 
 
