@@ -59,4 +59,22 @@
    - strichliste-frontend
   gather_facts: true
 
-
+- name: webserver
+  hosts: strichliste
+  become: yes
+  tags:
+  - nginx
+  - strichliste
+  - le-nginx
+  roles:
+   - le-nginx
+  gather_facts: true
+  vars:
+   - dns_name: "xn--see-br-0xa.se"
+   - nginx_default_server: true
+   - gen_letsencrypt_certificate: false
+   - skip_dhparam: false
+   - reverse_proxy: false
+   - copy_own_certificate: false 
+   - custom_root: true
+   - custom_root_path: /opt/strichliste2-backend/public
