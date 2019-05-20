@@ -133,7 +133,7 @@ leases:
     - address: '172.23.31.43'
   - host:
     - name: 'xn--see-br-0xa'
-    - mac: 'b8:27:eb:e1:4b:77'
+    - mac: 'b8:27:eb:26:5f:1d'
     - address: '172.23.31.44'
   - host:
     - name: 'webcam6'
@@ -143,6 +143,10 @@ leases:
     - name: 'seeboerse-touch'
     - mac: 'b8:27:eb:97:b0:9b'
     - address: '172.23.31.46'
+  - host:
+    - name: 'l3d-pi-wifi'
+    - mac: 'b8:27:eb:e1:4b:77'
+    - address: '172.23.31.47'
   - host:
     - name: 'ap-og-sued'
     - mac: 'f0:9f:c2:f3:00:24'
