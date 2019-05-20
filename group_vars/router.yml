@@ -132,7 +132,7 @@ leases:
     - mac: 'e8:ab:fa:0a:e3:84'
     - address: '172.23.31.43'
   - host:
-    - name: 'webcam5'
+    - name: 'xn--see-br-0xa'
     - mac: 'b8:27:eb:e1:4b:77'
     - address: '172.23.31.44'
   - host:

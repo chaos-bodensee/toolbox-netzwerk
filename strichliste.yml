@@ -1,0 +1,80 @@
+---
+#- name: Setup Raspberry Pi to speak with ansible
+#  gather_facts: False
+#  tags:
+#  - always
+#  - raspberry
+#  - setup
+#  roles:
+#    - pi-setup
+
+- name: secure access to toolbox gateway
+  hosts: strichliste
+  tags:
+  - access
+  - ssh
+  - auth
+  - newuser
+  roles:
+   - ssh-auth
+   - sshd
+  vars:
+    - ansible_ssh_user: 'ansible'
+
+- name: install some fancy packages
+  hosts: strichliste
+  tags:
+  - setup
+  - base
+  roles:
+   - base-packages
+  gather_facts: false
+
+- name: create a fancy feature complete home
+  hosts: strichliste
+  tags:
+  - setup
+  - base
+  - home
+  - newuser
+  roles:
+   - dotfiles
+  gather_facts: false
+
+- name: strichliste-backend
+  hosts: strichliste
+  tags:
+  - backend
+  - strichliste
+  roles:
+   - strichliste-backend
+  gather_facts: true
+
+- name: strichliste-frontend
+  hosts: strichliste
+  tags:
+  - frontend
+  - strichliste
+  roles:
+   - strichliste-frontend
+  gather_facts: true
+
+- name: webserver
+  hosts: strichliste
+  become: yes
+  tags:
+  - nginx
+  - strichliste
+  - le-nginx
+  roles:
+   - le-nginx
+  gather_facts: true
+  vars:
+   - dns_name: "xn--see-br-0xa.se"
+   - nginx_default_server: true
+   - gen_letsencrypt_certificate: false
+  # - skip_dhparam: false
+   - reverse_proxy: false
+   - copy_own_certificate: false 
+   - custom_root: true
+   - custom_root_path: /opt/strichliste2-backend/public
