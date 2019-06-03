@@ -34,3 +34,7 @@ Die [Authoren](https://github.com/ToolboxBodensee/toolbox-netzwerk/graphs/contri
 
 * [Ansible-Crashkurs](https://media.ccc.de/v/gpn16-7574-ansible_crashkurs)
 
+ Error Handling
+-------------------------
+
+Hinweise zu Fehlern der laufenden Services (zB. Strichlistenzertifikat ist abgelaufen) ausschließlich per Github Issue!)
