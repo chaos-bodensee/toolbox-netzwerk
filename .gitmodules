@@ -70,3 +70,9 @@
 [submodule "roles/le-nginx"]
 	path = roles/le-nginx
 	url = https://github.com/DO1JLR/role_le-nginx.git
+[submodule "roles/kubernetes"]
+	path = roles/kubernetes
+	url = https://github.com/geerlingguy/ansible-role-kubernetes.git
+[submodule "roles/docker"]
+	path = roles/docker
+	url = https://github.com/geerlingguy/ansible-role-docker.git

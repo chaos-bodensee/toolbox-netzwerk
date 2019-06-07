@@ -29,7 +29,6 @@
   - base
   roles:
    - base-packages
-  gather_facts: false
 
 - name: create a fancy feature complete home
   hosts: kubernetes
@@ -40,6 +39,14 @@
   - newuser
   roles:
    - dotfiles
-  gather_facts: false
 
-
+- name: create cubernetes
+  become: true
+  hosts: kubernetes
+  tags:
+   - setup
+   - docker
+   - kubernetes
+  roles:
+    - docker
+    - kubernetes
