@@ -1,1 +1,3 @@
 kubernetes_role: "node"
+docker_apt_arch: armhf
+
