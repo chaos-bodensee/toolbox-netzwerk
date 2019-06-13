@@ -1,2 +1,4 @@
 ---
 add_ethz: false
+docker_apt_arch: armhf
+
