@@ -1,3 +1,4 @@
 kubernetes_role: "master"
+kubernetes_allow_pods_on_master: true
 docker_apt_arch: armhf
 
