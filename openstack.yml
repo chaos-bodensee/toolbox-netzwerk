@@ -1,0 +1,40 @@
+---
+- name: secure access to toolbox openstack cluster
+  hosts: openstack
+  tags:
+  - access
+  - ssh
+  - auth
+  - newuser
+  - ssh-auth
+  - sshd
+  roles:
+   - ssh-auth
+   - sshd
+  vars:
+    - ansible_ssh_user: 'ansible'
+
+- name: install some fancy packages
+  hosts: openstack
+  tags:
+  - setup
+  - base
+  - packages
+  - base-packages 
+  roles:
+   - base-packages
+
+- name: create a fancy feature complete home
+  hosts: openstack
+  tags:
+  - setup
+  - base
+  - home
+  - newuser
+  - dotfiles
+  - install-bat
+  roles:
+   - dotfiles
+   - install-bat
+
+
