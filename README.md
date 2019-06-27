@@ -26,15 +26,23 @@ Wenn du keine Erfahrungen mit git hast ist im Zweifelsfall ein neu clonen mit su
 
 Wie du Zugänge bekommst, erfährst du in [ZUGANG.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/doc/ZUGANG.md)
 
- Weitere Sehenswerten Details:
-==================
+ Netzwerk Setup
+------------------
+Wir haben ein großteil des Netzwerkes auch per ansible deployed und damit für jeden einsehbar und anpassbar gemacht.
+Eine Grundlegende Übersicht dazu gibt es in der [NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/doc/NETZWERK.md).
 
-* [NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/NETZWERK.md)
-* [TIPPS.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/TIPPS.md)
+ Doku
+------
+Für nützliche Hinweise gibt es das ``doc/`` Directory.
+
+**Schau da rein!** 
+
+ Weitere Infos
+----------------
 
 * [Ansible-Crashkurs](https://media.ccc.de/v/gpn16-7574-ansible_crashkurs)
 
  Error Handling
 -------------------------
-
 Hinweise zu Fehlern der laufenden Services (zB. Strichlistenzertifikat ist abgelaufen) ausschließlich per Github Issue!)
+Am besten direkt mit Fixenden Pull-Request.

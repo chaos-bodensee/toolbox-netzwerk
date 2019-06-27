@@ -53,20 +53,14 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 [S⁴] Besprechungsraum Switch (ruum42)
 
 [Srv¹] Server im linken Rack im Keller
- + bisher nicht Dokumentiert
+ + HIER in der Datei nicht weiter Dokumentiert
 
 [Srv²] Server im rechten Rack im Keller
- + bisher nicht Dokumentiert
+ + HIER in der Datei nicht weiter Dokumentiert
 ```
 
-### Weitere von ansible betreute Geräte:
 
-* Gruppe Motion:
-  * cluster.tbbs.me
-    * bietet temporären Filestorage für motion
-  * webcam6.tbbs.me
-    * Raspi mit motion installiert
+ Switche
+----
+S¹ bis S³ sind cisco switche und per ansible administriert. S⁴ ist ein passiver Switch. Dumm - aber leise.
 
-
-
-<!-- # ansible-playbook gateway.yml --vault-password-file ../toolbox-ansible-vault/toolbox-ansible-vault.pwd -->
