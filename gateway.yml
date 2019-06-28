@@ -1,5 +1,4 @@
 ---
-
 - name: secure access to toolbox gateway
   hosts: router
   tags:

@@ -1,40 +1,48 @@
  Das Netzwerk der Toolbox Bodensee e.V.
 ==============================
 
-# Git hinweis
+# Git Hinweis
+
+**Achtung**, dieses git repository enthält submodule. Diese können wie folgt runtergeladen werden:
 
 ```bash
+# clone the git inclusive submodules
 git clone --recursive https://github.com/ToolboxBodensee/toolbox-netzwerk.git
+
 cd toolbox-netzwerk/
+# clone and pull the submodules
 git submodule update --init --recursive
 ```
+
+## Protipp:
+Der Befehl  `git status`` ist immer gut um eine Übersicht zu bekommen, was in dem git momentan so los ist.<br/>
+Wenn du keine Erfahrungen mit git hast ist im Zweifelsfall ein neu clonen mit submodulen die richtige Wahl.
+
 
  Mithelfen
 ------------
 
-**Mitarbeit** ist hier gerne gesehen. Bei Fragen gerne auch den [L3D](https://chaos.social/@l3d), Mart, Alex oder Max ansprechen.
+**Mitarbeit** ist hier gerne gesehen. Bei Fragen gerne einfach ein Issue öffnen oder Menschen wie [L3D](https://chaos.social/@l3d), [Alex](https://github.com/Devil0000) oder [Max](https://github.com/maxbachmann) ansprechen.
 
-**Zugang zu Geräten** gibt es *(mit ausnahme der Switche)* per SSH Key. *(teilweise ausschließlich ed25519 Keys)*<br/>
+Wie du Zugänge bekommst, erfährst du in [ZUGANG.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/doc/ZUGANG.md)
 
-Hierfür deine SSH public Keys in ``/files/admin_ssh_keys/deinName@keybezeichnung_id.pub`` legen. *(Das ist in [diesem](https://gitea.see-base.de/toolbox/ssh-public-keys.git) Repo. Registrierung ist für jeden offen)*.<br/>
+ Netzwerk Setup
+------------------
+Wir haben einen Großteil des Netzwerkes auch per ansible deployed und damit für jeden einsehbar und anpassbar gemacht.
+Eine grundlegende Übersicht dazu gibt es in der [NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/doc/NETZWERK.md).
 
-Außerdem musst du dein Name in die ``users`` und die ``accounts`` oder eventuell ``admin`` variable des jeweiligen hosts oder gruppe packen. Weitere Details dazu in den READMEs [hier](https://github.com/chaos-bodensee/role_sshd/blob/master/README.md), [dort](https://github.com/ffbsee/role-ssh_authorized_keys/blob/master/README.md) und auch [da drüben](https://gitea.see-base.de/toolbox/ssh-public-keys/src/branch/master/README.md).<br/>
+ Doku
+------
+Für nützliche Hinweise gibt es das ``doc/`` Directory.
 
+**Schau da rein!** 
 
-**Wieso mitmachen?**<br/>
-Die Toolbox ist ein Maker- und Hackerspace voller kreativer Menschen mit expertise in vielen Bereichen. Lass uns doch gegenseitig Wissen austauschen, anstatt dieses anderen vorzuenthalten.<br/>
-**Wissen ist eine der Ressourcen, die mehr wird, wenn man sie mit anderen teilt!**<br/>
-Die [Authoren](https://github.com/ToolboxBodensee/toolbox-netzwerk/graphs/contributors) dieses Playbook sind bestimmt gerne bereit dir das ganze ausführlich zu erklären, wenn du Sie freundlich darum bittest.
-
- Weitere Sehenswerten Details:
-==================
-
-* [NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/NETZWERK.md)
-* [TIPPS.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/TIPPS.md)
+ Weitere Infos
+----------------
 
 * [Ansible-Crashkurs](https://media.ccc.de/v/gpn16-7574-ansible_crashkurs)
 
  Error Handling
 -------------------------
-
 Hinweise zu Fehlern der laufenden Services (zB. Strichlistenzertifikat ist abgelaufen) ausschließlich per Github Issue!)
+Am besten direkt mit Fixenden Pull-Request.

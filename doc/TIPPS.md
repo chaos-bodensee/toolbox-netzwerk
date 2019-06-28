@@ -1,4 +1,3 @@
-
  Tipps:
 ==============
 
@@ -19,18 +18,6 @@ Eine initiale SSH Verbindung kann man zB. mit folgenden extra parametern aufbaue
 ```
 ssh -c aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -oKexAlgorithms=+diffie-hellman-group1-sha1 toolbox@SWITCH_IP
 ```
-
- Telekom + IPv6
--------------
-Um die IPv6 Route der Telekom zu unserem Router zu setzen, muss mit dhcpv6 das passende Prefix angefragt werden.
-Damit wird dann die passende Route zu seinem Prefix gesetzt.
-
-**Achtung:**, die Toolbox hat feste IP und IPv4 Adressen. Daher können die hier teilweise fest einkonfiguriert werden.
-Für dynamische IP Adressen sieht das anders möglicherweise anders aus. Feste IP Adressen kosten aber idr. nur ein paar Euro mehr.
-
-**Achtung:**
-Momentan ist das IPv6 noch etwas buggy. L3D, Max oder Alex sagen gerne, wieso!
-
  Ansible-Vault
 ---------------
 
