@@ -2,8 +2,8 @@
 # Which user get which ssh key:
 users:
   l3d:
-   - l3d@backup.l3d.yt
    - l3d@derpy.l3d.yt
+   - l3d@backup.l3d.yt
    - l3d@mobile.l3d.yt
    - l3d@pinkie.l3d.yt
    - l3d@business.wingcon.com
@@ -12,17 +12,22 @@ users:
   matt:
    - matt@mknoll@Matthiass-MacBook-Pro.local
 
-# admins on local device:
+# admins on local devices:
 admins:
-  - l3d
-  - alex
-# users createt on this host
-accounts:
   - l3d
   - alex
   - matt
 
-ssh_public_key_store: 'admin_ssh_keys'
-home_sweet_home: false
-only_allow_ed25519: true
+# users createt on the host
+accounts:
+  - l3d
+  - alex
 
+# where are ssh keys located?
+ssh_public_key_store: 'admin_ssh_keys'
+
+# do not configure .bashrc multiple times
+home_sweet_home: false
+
+# we only accept post-quantum cryptographic keys
+only_allow_ed25519: true
