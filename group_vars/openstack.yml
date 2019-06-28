@@ -16,6 +16,7 @@ users:
 admins:
   - l3d
   - alex
+  - matt
 # users createt on this host
 accounts:
   - l3d
