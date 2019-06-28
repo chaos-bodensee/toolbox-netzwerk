@@ -12,16 +12,17 @@ users:
   matt:
    - matt@mknoll@Matthiass-MacBook-Pro.local
 
-# admins on local devices:
+# people with sudo permissions at the ansible hosts:
 admins:
   - l3d
   - alex
   - matt
 
-# users createt on the host
+# users createt at the ansible hosts:
 accounts:
   - l3d
   - alex
+  - matt
 
 # where are ssh keys located?
 ssh_public_key_store: 'admin_ssh_keys'
