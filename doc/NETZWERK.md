@@ -64,3 +64,9 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 ----
 S¹ bis S³ sind cisco switche und per ansible administriert. S⁴ ist ein passiver Switch. Dumm - aber leise.
 
+ Static IPs
+--------------
+Static IPs are currently *(June 2019)* managed in the ``group_vars/router.yml`` file.
+
+We currently only use the ``172.23.16.0/20`` subnet for all devices. THIS WILL CHANGE SOON.
+There we dont give random IPs from the ``172.23.31/24`` range to clients in the network. Use this are for static dhcp leases.`
