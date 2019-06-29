@@ -14,7 +14,8 @@ users:
    - mart@kirika
    - mart@ffbsee.de
   matt:
-   - matt@mknoll@Matthiass-MacBook-Pro
+   - matt@toolbox_id
+   - matt@mattlabp
   raoul:
    - raoul@ccczh
   alex:
@@ -130,4 +131,4 @@ radvd_prefix: '2003:a:13b:9000::/64'
 radvd_dns: '2003:a:13b:9000::1'
 
 # stop making ssh more unsecure
-only_allow_ed25519: false # old shit for alex
+only_allow_ed25519: true
