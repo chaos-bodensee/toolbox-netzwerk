@@ -8,6 +8,7 @@ Checklist:
  + your local branch is up to date
  + all submodules are initialized and up to date
  + You have the current ansible installed *(at least version 2.8)*
+ + You need the folder ``$HOME/ansible```created with write permission for your user
 
  How to deploy
 -----------------
