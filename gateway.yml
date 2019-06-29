@@ -1,4 +1,13 @@
 ---
+- hosts: openstack
+  tags: default
+  pre_tasks:
+    - name: check if ansible is up to date.
+      assert:
+        that: "ansible_version.full is version_compare('2.8', '>=')"
+        msg: >
+          "You must update Ansible to at least 2.8 to use this version of the toolbox openstack playbook."
+
 - name: secure access to toolbox gateway
   hosts: router
   tags:
