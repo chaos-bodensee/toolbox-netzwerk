@@ -15,7 +15,7 @@ git submodule update --init --recursive
 ```
 
 ## Protipp:
-Der Befehl  `git status`` ist immer gut um eine Übersicht zu bekommen, was in dem git momentan so los ist.<br/>
+Der Befehl  ``git status`` ist immer gut um eine Übersicht zu bekommen, was in dem git momentan so los ist.<br/>
 Wenn du keine Erfahrungen mit git hast ist im Zweifelsfall ein neu clonen mit submodulen die richtige Wahl.
 
 
@@ -35,7 +35,9 @@ Eine grundlegende Übersicht dazu gibt es in der [NETZWERK.md](https://github.co
 ------
 Für nützliche Hinweise gibt es das ``doc/`` Directory.
 
-**Schau da rein!** 
+**Schau da rein!**
+
+**UNBEDINGT!!!ELFcos(0)**
 
  Weitere Infos
 ----------------
