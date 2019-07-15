@@ -9,6 +9,9 @@ users:
    - l3d@business.wingcon.com
   alex:
    - alex@toolbox
+   matt:
+   - matt@toolbox_id_ed25519
+   - matt@mattlabp_rsa
 
 # admins on local device:
 admins:
@@ -18,6 +21,7 @@ admins:
 accounts:
   - l3d
   - alex
+  - matt
 
 ssh_public_key_store: 'admin_ssh_keys'
 home_sweet_home: false
