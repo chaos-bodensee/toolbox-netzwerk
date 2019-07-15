@@ -10,7 +10,8 @@ users:
   alex:
    - alex@toolbox
    matt:
-   - matt@mknoll@Matthiass-MacBook-Pro.local
+   - matt@toolbox_id_ed25519
+   - matt@mattlabp_rsa
 
 # admins on local device:
 admins:
