@@ -9,7 +9,7 @@ users:
    - l3d@business.wingcon.com
   alex:
    - alex@toolbox
-   matt:
+  matt:
    - matt@toolbox_id_ed25519
    - matt@mattlabp_rsa
 
@@ -17,6 +17,7 @@ users:
 admins:
   - l3d
   - alex
+
 # users createt on this host
 accounts:
   - l3d
@@ -24,6 +25,4 @@ accounts:
   - matt
 
 ssh_public_key_store: 'admin_ssh_keys'
-home_sweet_home: false
 only_allow_ed25519: true
-
