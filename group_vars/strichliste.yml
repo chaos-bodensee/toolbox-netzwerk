@@ -2,13 +2,15 @@
 # Which user get which ssh key:
 users:
   l3d:
-   - l3d@backup.l3d.yt
    - l3d@derpy.l3d.yt
    - l3d@mobile.l3d.yt
    - l3d@pinkie.l3d.yt
    - l3d@business.wingcon.com
+   - l3d@backup.l3d.yt
+   - l3d@backup-rsa.l3d.yt
   alex:
    - alex@toolbox
+   - alex@rsa-toolbox
 
 # admins on local device:
 admins:
@@ -21,7 +23,7 @@ accounts:
 
 ssh_public_key_store: 'admin_ssh_keys'
 home_sweet_home: false
-only_allow_ed25519: false
+only_allow_ed25519: true
 add_ethz: false
 restrict_allow_users: false
 sshd_password_authentication: 'no'
