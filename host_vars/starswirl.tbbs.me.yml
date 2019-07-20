@@ -92,6 +92,11 @@ dhcp:
 pppoe_username: "{{ _pppoe_username | string }}"
 pppoe_passwort: "{{ _pppoe_passwort | string }}"
 
+# adding missing non-free firmware
+packages_extra:
+  - firmware-realtek
+base_pkg_non_free_firmware: true
+
 _pppoe_username: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           35303534626662353838636162346630373634313164356461323961333166336433373037306437

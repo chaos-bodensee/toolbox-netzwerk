@@ -25,7 +25,6 @@
 
 - name: install some fancy packages
   hosts: router
-  gather_facts: False
   tags:
   - setup
   - base
@@ -49,7 +48,6 @@
 
 - name: configure the basic network
   hosts: router
-  gather_facts: False
   tags:
   - networking
   - resolver
@@ -62,80 +60,80 @@
    - resolver
    - sysctl
 
-- name: configure basic routing and firewall (e.g. NAT)
-  hosts: router
-  gather_facts: False
-  tags:
-  - setup
-  - network
-  - routing
-  - ferm
-  roles:
-   - ferm
-
-- name: configure router services -> pppoe
-  hosts: router
-  tags:
-  - network
-  - pppoe
-  - dsl
-  - telekom
-  roles:
-   - pppoe
-
-- name: configure router services -> [WAN] dhcpv6-client
-  gather_facts: True
-  hosts: router
-  tags:
-  - network
-  - pppoe
-  - ipv6
-  - dhcpv6
-  - telekom
-  - wide
-  - wide-dhcp
-  - wide-dhcpv6
-  roles:
-   - wide_dhcpv6
-
-- name: configure router services -> dns
-  gather_facts: False
-  hosts: router
-  tags:
-  - network
-  - dns
-  - unbound
-  roles:
-   - tb-unbound
-
-- name: configure router services -> dhcpd
-  gather_facts: False
-  hosts: router
-  tags:
-  - network
-  - dhcp
-  - dhcpd
-  - isc-dhcp-server
-  - dhcp-server
-  roles:
-   - dhcpd
-
-- name: configure router services -> radvd
-  hosts: router
-  tags:
-  - network
-  - ipv6
-  - radvd
-  roles:
-   - radvd
-
-- name: deploy some toolbox scripts
-  gather_facts: False
-  hosts: router
-  tags:
-  - xtra
-  - extra
-  - toolbox-foo
-  roles:
-   - toolbox-foo
+#- name: configure basic routing and firewall (e.g. NAT)
+#  hosts: router
+#  gather_facts: False
+#  tags:
+#  - setup
+#  - network
+#  - routing
+#  - ferm
+#  roles:
+#   - ferm
+#
+#- name: configure router services -> pppoe
+#  hosts: router
+#  tags:
+#  - network
+#  - pppoe
+#  - dsl
+#  - telekom
+#  roles:
+#   - pppoe
+#
+#- name: configure router services -> [WAN] dhcpv6-client
+#  gather_facts: True
+#  hosts: router
+#  tags:
+#  - network
+#  - pppoe
+#  - ipv6
+#  - dhcpv6
+#  - telekom
+#  - wide
+#  - wide-dhcp
+#  - wide-dhcpv6
+#  roles:
+#   - wide_dhcpv6
+#
+#- name: configure router services -> dns
+#  gather_facts: False
+#  hosts: router
+#  tags:
+#  - network
+#  - dns
+#  - unbound
+#  roles:
+#   - tb-unbound
+#
+##- name: configure router services -> dhcpd
+#  gather_facts: False
+#  hosts: router
+#  tags:
+#  - network
+#  - dhcp
+#  - dhcpd
+#  - isc-dhcp-server
+#  - dhcp-server
+#  roles:
+#   - dhcpd
+#
+#- name: configure router services -> radvd
+#  hosts: router
+#  tags:
+#  - network
+#  - ipv6
+#  - radvd
+#  roles:
+#   - radvd
+#
+#- name: deploy some toolbox scripts
+#  gather_facts: False
+#  hosts: router
+#  tags:
+#  - xtra
+#  - extra
+#  - toolbox-foo
+#  roles:
+#   - toolbox-foo
 
