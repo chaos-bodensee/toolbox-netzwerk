@@ -12,8 +12,8 @@ users:
    - alex@toolbox
    - alex@rsa-toolbox
   matt:
-   - matt@toolbox_id_ed25519
-   - matt@mattlabp_rsa
+   - matt@toolbox
+   - matt@mattlabp
 
 # admins on local device:
 admins:
