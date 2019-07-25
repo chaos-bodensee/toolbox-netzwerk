@@ -1,5 +1,5 @@
  VLANs in dem Toolbox Netz
-======================00
+======================
 
 Mehr Überblick zum Netz auch unter [doc/NETZWERK.md](https://github.com/ToolboxBodensee/toolbox-netzwerk/blob/master/doc/NETZWERK.md)...
 
