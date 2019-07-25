@@ -1,0 +1,95 @@
+---
+
+# Which user get which ssh key:
+users:
+  l3d:
+   - l3d@derpy.l3d.yt
+   - l3d@mobile.l3d.yt
+   - l3d@pinkie.l3d.yt
+   - l3d@business.wingcon.com
+   - l3d@backup.l3d.yt
+   - l3d@backup-rsa.l3d.yt
+  mart:
+   - mart@waldorfschule-ueberlingen.de
+   - mart@linux-srfv
+   - mart@kirika
+   - mart@ffbsee.de
+  matt:
+   - matt@toolbox_id
+   - matt@mattlabp
+  raoul:
+   - raoul@ccczh
+  alex:
+   - alex@toolbox
+   - alex@rsa-toolbox
+  maxbachmann:
+   - maxbachmann@toolbox
+
+# admins on local device:
+admins:
+  - mart
+  - l3d
+  - raoul
+  - alex
+  - matt
+
+# users createt on this host
+accounts:
+  - l3d
+  - mart
+  - raoul
+  - matt
+  - alex
+  - maxbachmann
+
+ssh_public_key_store: 'admin_ssh_keys'
+
+# basic system variable
+hostname: "starfill.tbbs.me"
+
+
+# configure resolveer role
+resolver_searchdomains:
+  - tbbs.me
+
+resolver_nameservers:
+  - 85.214.20.141
+  - 194.150.168.168
+  - 2001:1608:10:25::1c04:b12f
+  - 2001:41d0:2:73d4::125
+  - 2a02:2970:1002::18
+
+# ansible managed warning
+ansible_managed: "This file is managed by ansible - to change any variable here, please remeber they will be overwritten! -> More information: https://github.com/ToolboxBodensee/toolbox-netzwerk.git "
+
+# some network details for unbound:
+unbound_accepted_ip: 
+  - "2003:a:13b:9000::/56"
+  - "2003:1:17f:bb90::/64"
+  - "172.23.16.0/16"
+  - "217.91.187.203/32"
+
+unbound_interfaces:
+  - "172.23.16.2"
+#  - "2003:a:13b:9000::1"
+
+# some variables for isc-dhcp-server
+
+# hast to be looked up on machine
+# ipv4_dhcp_interface: enp1s0
+
+# no decond dhcp possible yet
+# dhcp:
+#  - pool: '172.23.16.0'
+#  - mask: '255.255.240.0'
+#  - range: '172.23.16.100 172.23.30.255'
+#  - router: '172.23.16.1'
+#  - dnsv4: '172.23.16.1'
+#  - domain: 'tbbs.me'
+#  - broadcast: '172.23.31.255'
+#  - lease: '14400'
+#  - max_lease: '1823442'
+#  - unify: '172.23.16.1'
+
+# stop making ssh more unsecure
+only_allow_ed25519: true
