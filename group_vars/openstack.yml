@@ -33,3 +33,7 @@ home_sweet_home: false
 
 # we only accept post-quantum cryptographic keys
 only_allow_ed25519: true
+
+# we need non-free and contrib firmware
+base_pkg_non_free_firmware: true
+base_pkg_contrib: true
