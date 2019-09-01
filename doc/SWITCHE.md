@@ -62,8 +62,17 @@ Vergess nicht den hostnamen im DNS und im Inventory zu hinterlegen sowie in den 
 ! dies kann je nach switch anders sein. googeln hilft!
 ! als erstes einen ssh key generieren
 crypto key generate rsa
-
+!... google for more details plz
+!
+line vty 0 4
+  transport input ssh
+  login local
+  password 7
+  end
+write
 ```
+
+5. deploy via ansible
 
 
  How to Firmware Upgrade
