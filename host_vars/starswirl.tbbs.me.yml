@@ -14,6 +14,9 @@ users:
    - mart@linux-srfv
    - mart@kirika
    - mart@ffbsee.de
+  matt:
+   - matt@toolbox_id
+   - matt@mattlabp
   raoul:
    - raoul@ccczh
   alex:
@@ -28,12 +31,14 @@ admins:
   - l3d
   - raoul
   - alex
+  - matt
 
 # users createt on this host
 accounts:
   - l3d
   - mart
   - raoul
+  - matt
   - alex
   - maxbachmann
 
