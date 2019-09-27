@@ -113,7 +113,7 @@ leases:
     - address: '172.23.31.37'
   - host:
     - name: 'treppeled'
-    - mac: '5c:cf:7f:d9:66:19'
+    - mac: '84:f3:eb:25:82:76'
     - address: '172.23.31.38'
   - host:
     - name: 'cam8'
