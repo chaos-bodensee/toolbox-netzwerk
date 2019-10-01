@@ -1,0 +1,9 @@
+---
+- name: deploy router and gateway to internet
+  import_playbook: gateway.yml
+
+- name: deploy wlan controller to raspi
+  import_playbook: wlan.yml
+
+- name: deploy switch configuration on ios
+  import_playbook: switche.yml

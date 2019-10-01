@@ -1,5 +1,5 @@
 ---
-- hosts: router
+- hosts: localhost
   tags: default
   pre_tasks:
     - name: check if ansible is up to date.
