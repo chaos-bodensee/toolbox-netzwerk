@@ -68,7 +68,7 @@ leases:
     - mac: '98:4b:e1:6e:4d:7c'
     - address: '172.23.31.26' 
   - host:
-    - name: 'r42-led'
+    - name: 'r42-led-tisch'
     - mac: '84:f3:eb:58:3f:ec'
     - address: '172.23.31.27' 
   - host:
@@ -127,6 +127,10 @@ leases:
     - name: 'hp'
     - mac: 'f0:92:1c:66:ce:9c'
     - address: '172.23.31.41'
+  - host:
+    - name: 'r42-led-wand'
+    - mac: '80:7d:3a:79:11:10'
+    - address: '172.23.31.42'
   - host:
     - name: 'cam-fridge'
     - mac: 'e8:ab:fa:0a:e3:84'
