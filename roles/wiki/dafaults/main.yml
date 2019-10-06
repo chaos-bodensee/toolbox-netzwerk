@@ -1,0 +1,15 @@
+---
+
+- src: ikke_t.container_image_cleanup
+  name: container_image_cleanup
+
+- src: ikke_t.podman_container_systemd
+  name: podman_container_systemd
+
+
+- name: install wiki in a podman container on given host
+  hosts: os-2.tbbs.me
+   roles:
+   - wiki
+   vars:
+    - ansible_ssh_user: 'root'
