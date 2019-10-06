@@ -1,3 +1,76 @@
 ---
 
-- name: install podman container with toolbox wiki
+- name: ensure wiki container is running
+  hosts: wiki
+  vars:
+    container_state: running
+    container_name: wiki-ansbl
+    container_image: bitnami/dokuwiki:latest
+    wiki_nfs_mountpoint: /mnt/wiki_data
+    wiki_www_dir: wiki_www
+    nwiki_www_dir_owner: 33
+    wiki_www_dir_group: root
+    container_run_args: >-
+      --rm
+      -p 8080:80/tcp
+      -v "{{exported_container_volumes_basedir}}/{{wiki_www_dir}}:/var/www/html:Z"
+      -v "{{ wiki_nfs_mountpoint }}/data:/var/www/html/data"
+      --hostname={{ wiki_fqdn }}
+      --memory=1024M
+    container_firewall_ports:
+      - 8080/tcp
+
+  tasks:
+
+  - name: set variable states when container state is running
+    set_fact:
+      cron_state: present
+    when: nextcloud_state == "running"
+
+  - name: set varialbe states when container state is not running
+    set_fact:
+      cron_state: absent
+    when: wiki_state != "running"
+
+  - name: Ensure container data mount points
+    tags: mount
+    file:
+      path: "{{ wiki_nfs_mountpoint }}"
+      state: directory
+      - name: ensure container NFS mounts from NAS
+        tags: [ mount, nfs ]
+        mount:
+          src: "{{ wiki_nfs_src }}"
+          path: "{{ wiki_nfs_mountpoint }}"
+          fstype: nfs
+          opts: rw,rsize=8192,wsize=8192,timeo=14,intr,vers=3
+          state: mounted
+
+      - name: ensure wiki www files mount point on host
+        tags: mount
+        file:
+          path: "{{exported_container_volumes_basedir}}/{{wiki_www_dir}}"
+          owner: "{{ wiki_www_dir_owner }}"
+          group: "{{ wiki_www_dir_group }}"
+          state: directory
+
+      - name: ensure container state
+        tags: container
+        import_role:
+          name: podman_container_systemd
+
+      - name: ensure cron is available
+        package:
+          name:
+            - cronie
+            - crontabs
+          state: present
+        when: cron_state == "present"
+
+      - name: ensure wiki cron get's run every 15 mins.
+        tags: cron
+        cron:
+          name: "wiki periodic job"
+          minute: "*/15"
+          job: podman exec -u www-data wiki /usr/local/bin/php -f /var/www/html/cron.php
+          state: "{{ cron_state }}"
