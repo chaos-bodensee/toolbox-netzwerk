@@ -20,10 +20,6 @@ leases:
     - mac: '00:19:99:74:9e:1f'
     - address: '172.23.31.13'
   - host:
-    - name:  'mrmeeseeks01'
-    - mac: '1c:6f:65:d0:75:66'
-    - address: '172.23.31.15'
-  - host:
     - name: 'mulltec'
     - mac: 'b8:27:eb:78:40:a4'
     - address: '172.23.31.16' 
@@ -152,15 +148,15 @@ leases:
     - mac: 'b8:27:eb:e1:4b:77'
     - address: '172.23.31.47'
   - host:
-    - name: 'openstack-1'
+    - name: 'os-1'
     - mac: 'e4:1f:13:c3:0c:df'
     - address: '172.23.31.141'
   - host:
-    - name: 'openstack-2'
+    - name: 'os-2'
     - mac: '1c:6f:65:d0:75:66'
     - address: '172.23.31.142'
   - host:
-    - name: 'openstack-3'
+    - name: 'os-3'
     - mac: 'bc:5f:f4:d6:ed:3a'
     - address: '172.23.31.143'
   - host:
