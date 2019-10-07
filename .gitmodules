@@ -76,3 +76,6 @@
 [submodule "roles/base-packages"]
 	path = roles/base-packages
 	url = https://github.com/chaos-bodensee/role-base_packages.git
+[submodule "roles/version"]
+	path = roles/version
+	url = https://github.com/chaos-bodensee/role-ansible_version.git
