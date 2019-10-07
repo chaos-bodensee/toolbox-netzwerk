@@ -38,8 +38,13 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
 ### wichtige Teile des Netzes:
 
 ```
-[R] APU Router:
- + starswirl.tbbs.me.
+[R] Gateway
+ + Unify Gateway:
+   * PPPoE 
+   * Routing
+ + APU Router ``dhcp.tbbs.me``
+   * DHCP
+   * DNS
 
 [S¹] Switch im Netzwerkraum:
  + cheerilee.tbbs.me.
