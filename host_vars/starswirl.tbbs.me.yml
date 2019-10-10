@@ -14,9 +14,6 @@ users:
    - mart@linux-srfv
    - mart@kirika
    - mart@ffbsee.de
-  matt:
-   - matt@toolbox_id
-   - matt@mattlabp
   raoul:
    - raoul@ccczh
   alex:
@@ -37,7 +34,6 @@ accounts:
   - l3d
   - mart
   - raoul
-  - matt
   - alex
   - maxbachmann
 
