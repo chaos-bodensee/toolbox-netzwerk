@@ -12,21 +12,15 @@ interface:
   GigabitEthernet0/1:
     name: "Toolbox Uplink"
     vlan: 0
-  GigabitEthernet0/6:
-    name: "VOC Uplink - Dose ruum42 -> beamer"
+  GigabitEthernet0/2:
+    name: "DHCP Server"
     vlan: 0
-  GigabitEthernet0/7:
-    name: "Freifunk Input"
-    vlan: 7
-  GigabitEthernet0/17:
+  GigabitEthernet0/3:
     name: "AP ruum42"
     vlan: 't'
-  GigabitEthernet0/26:
-    name: "Switch ruum42 - Dose ruum43 -> fenster"
+  GigabitEthernet0/4:
+    name: "Switch ruum42 - port_1_oben"
     vlan: 0
-  GigabitEthernet0/27:
-    name: "Freifunk output"
-    vlan: 7
   GigabitEthernet0/42:
     name: "Uplink E-werkstatt - AP - dose22"
     vlan: 't'
