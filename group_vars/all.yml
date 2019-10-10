@@ -11,6 +11,9 @@ users:
   alex:
    - alex@toolbox
    - alex@rsa-toolbox
+  matt:
+   - matt@toolbox
+   - matt@mattlabp
 
 # admins on local device:
 admins:
@@ -21,6 +24,7 @@ admins:
 accounts:
   - l3d
   - alex
+  - matt
 
 ssh_public_key_store: 'admin_ssh_keys'
 only_allow_ed25519: true
