@@ -3,7 +3,6 @@ ansible_become_method: enable
 ansible_connection: network_cli
 ansible_network_os: ios
 ansible_user: toolbox
-ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q vh.tbbs.me"'
 cisco_set_password: "{{ _cisco_set_password | string }}"
 cisco_set_account: "{{ _cisco_set_account | string }}"
 ansible_ssh_pass: "{{ _ansible_ssh_pass | string }}"
