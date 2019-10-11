@@ -8,27 +8,27 @@
 ```
 [@] Internet
 [T] Telekom DSL
-[R] APU Router
+[R] Gateway
+[A] APU Router
 [F] Freifunk Offloader
 [Sⁿ] Switch
 [Seⁿ] Server
 
  [@]
   |
- [T]-----[R]------[F]
-          |        |
-          '--[S¹]--' <-Netzwerkraum
-             |||
-      [S⁴]---'|'-------[S] <- 3D Druck [OG]      
- Bespr.raum   |'-------[S] <- Cyberlabor [OG]
-              |'-------[S] <- Lounge [EG] [nicht aufgebaut]
-              |
-  [S³]-------[S²] <<-- Keller
- Rack1     Rack2
-  |||        |||
- [Srv¹]    [Srv²]
- 
-```
+ [T]----[R]----[A]------[F]
+                |        |
+                '--[S¹]--' <-Netzwerkraum
+                   |||
+            [S⁴]---'|'-------[S] <- 3D Druck [OG]      
+       Bespr.raum   |'-------[S] <- Cyberlabor [OG]
+                    |'-------[S] <- Lounge [EG] [nicht aufgebaut]
+                    |
+        [S³]-------[S²] <<-- Keller
+       Rack1     Rack2
+        |||        |||
+       [Srv¹]    [Srv²]
+ ```
 
 ## Geräte Hostnamen:
 
