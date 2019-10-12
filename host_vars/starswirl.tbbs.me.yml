@@ -21,6 +21,8 @@ users:
    - alex@rsa-toolbox
   maxbachmann:
    - maxbachmann@toolbox
+  matt:
+   - matt@toolbox20_id_ed22519.pub
 
 # admins on local device:
 admins:
@@ -28,6 +30,7 @@ admins:
   - l3d
   - raoul
   - alex
+  - matt
 
 # users createt on this host
 accounts:
@@ -36,6 +39,7 @@ accounts:
   - raoul
   - alex
   - maxbachmann
+  - matt
 
 ssh_public_key_store: 'admin_ssh_keys'
 
