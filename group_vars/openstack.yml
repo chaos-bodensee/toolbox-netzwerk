@@ -12,6 +12,7 @@ users:
   matt:
    - matt@toolbox_id
    - matt@mattlabp
+   - matt@toolbox20_id_ed22519.pub
 
 # people with sudo permissions at the ansible hosts:
 admins:
