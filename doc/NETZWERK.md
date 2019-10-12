@@ -17,7 +17,7 @@
  [@]
   |
  [T]----[R]----[A]------[F]
-         |     |        |
+         |     |         |
          '-----'---[S¹]--' <-Netzwerkraum
                    |||
             [S⁴]---'|'-------[S] <- 3D Druck [OG]      
@@ -42,6 +42,7 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
  + Unify Gateway:
    * PPPoE 
    * Routing
+   
 [A] APU2 ``dhcp.tbbs.me``
    * DHCP
    * DNS
