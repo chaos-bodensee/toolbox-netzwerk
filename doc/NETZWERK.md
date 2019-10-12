@@ -8,27 +8,27 @@
 ```
 [@] Internet
 [T] Telekom DSL
-[R] APU Router
+[R] Gateway
+[A] APU
 [F] Freifunk Offloader
 [Sⁿ] Switch
 [Seⁿ] Server
 
  [@]
   |
- [T]-----[R]------[F]
-          |        |
-          '--[S¹]--' <-Netzwerkraum
-             |||
-      [S⁴]---'|'-------[S] <- 3D Druck [OG]      
- Bespr.raum   |'-------[S] <- Cyberlabor [OG]
-              |'-------[S] <- Lounge [EG] [nicht aufgebaut]
-              |
-  [S³]-------[S²] <<-- Keller
- Rack1     Rack2
-  |||        |||
- [Srv¹]    [Srv²]
- 
-```
+ [T]----[R]----[A]------[F]
+         |     |        |
+         '-----'---[S¹]--' <-Netzwerkraum
+                   |||
+            [S⁴]---'|'-------[S] <- 3D Druck [OG]      
+       Bespr.raum   |'-------[S] <- Cyberlabor [OG]
+                    |'-------[S] <- Lounge [EG] [nicht aufgebaut]
+                    |
+        [S³]-------[S²] <<-- Keller
+       Rack1     Rack2
+        |||        |||
+       [Srv¹]    [Srv²]
+ ```
 
 ## Geräte Hostnamen:
 
@@ -42,9 +42,10 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
  + Unify Gateway:
    * PPPoE 
    * Routing
- + APU Router ``dhcp.tbbs.me``
+[A] APU2 ``dhcp.tbbs.me``
    * DHCP
    * DNS
+   * ... 
 
 [S¹] Switch im Netzwerkraum:
  + cheerilee.tbbs.me.
