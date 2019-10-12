@@ -76,4 +76,5 @@ S¹ bis S³ sind cisco switche und per ansible administriert. S⁴ ist ein passi
 Static IPs are currently *(June 2019)* managed in the ``group_vars/router.yml`` file.
 
 We currently only use the ``172.23.16.0/20`` subnet for all devices. THIS WILL CHANGE SOON.
+VMs in the openstack-installation get random IP-adresses from the range ``172.23.23/24`` from DHCP-Server during vm-boot.
 There we dont give random IPs from the ``172.23.31/24`` range to clients in the network. Use this are for static dhcp leases.`
