@@ -9,7 +9,7 @@
 [@] Internet
 [T] Telekom DSL
 [R] Gateway
-[A] APU Router
+[A] APU
 [F] Freifunk Offloader
 [Sⁿ] Switch
 [Seⁿ] Server
@@ -17,8 +17,8 @@
  [@]
   |
  [T]----[R]----[A]------[F]
-                |        |
-                '--[S¹]--' <-Netzwerkraum
+         |     |        |
+         '-----'---[S¹]--' <-Netzwerkraum
                    |||
             [S⁴]---'|'-------[S] <- 3D Druck [OG]      
        Bespr.raum   |'-------[S] <- Cyberlabor [OG]
@@ -42,9 +42,10 @@ Die Interne Domain der Toolbox ist [tbbs.me.](https://tbbs.me.)<br/>
  + Unify Gateway:
    * PPPoE 
    * Routing
- + APU Router ``dhcp.tbbs.me``
+[A] APU2 ``dhcp.tbbs.me``
    * DHCP
    * DNS
+   * ... 
 
 [S¹] Switch im Netzwerkraum:
  + cheerilee.tbbs.me.
