@@ -10,7 +10,7 @@ users:
    - l3d@backup-rsa.l3d.yt
   alex:
    - alex@toolbox
-   - alex@rsa-toolbox
+   - alex@l480-toolbox
 
 # admins on local device:
 admins:
