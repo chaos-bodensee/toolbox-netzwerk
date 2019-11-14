@@ -88,9 +88,6 @@ dhcp:
 pppoe_username: "{{ _pppoe_username | string }}"
 pppoe_passwort: "{{ _pppoe_passwort | string }}"
 
-# adding missing non-free firmware
-packages_extra:
-  - firmware-realtek
 base_pkg_non_free_firmware: true
 
 _pppoe_username: !vault |

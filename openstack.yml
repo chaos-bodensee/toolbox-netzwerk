@@ -18,6 +18,7 @@
   - ssh-auth
   - sshd
   roles:
+   - manage_users
    - ssh-auth
    - sshd
   vars:

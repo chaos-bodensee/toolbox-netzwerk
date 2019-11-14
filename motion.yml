@@ -17,6 +17,7 @@
   - auth
   - newuser
   roles:
+   - manage_users
    - ssh-auth
    - sshd
   vars:
