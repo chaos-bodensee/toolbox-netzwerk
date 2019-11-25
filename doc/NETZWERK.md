@@ -16,9 +16,9 @@
 
  [@]
   |
- [T]----[R]----[A]------[F]
+ [T]----[R]   [A]       [F]
          |     |         |
-         '-----'---[S¹]--' <-Netzwerkraum
+         '-----'===[S¹]--' <-Netzwerkraum
                    |||
             [S⁴]---'|'-------[S] <- 3D Druck [OG]      
        Bespr.raum   |'-------[S] <- Cyberlabor [OG]
